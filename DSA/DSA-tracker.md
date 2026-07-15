@@ -59,6 +59,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 5
 - **Revisit by:** 2026-07-21
 
+### Group Anagrams — AH 4
+- **Date:** 2026-07-15
+- **Topic/Pattern:** Arrays and Hashing
+- **Signal I used to recognize it:** Talking about frequency and count of a string
+- **Brute force approach:** Sort the strings and then using hashmap we keep track of all the anagrams
+- **Optimized approach:** Use a vector of size 26, change the frequency of that index. Convert it to string and then add it as a key in a hashmap
+- **Time / Space:** O(n*k)
+- **Where I got stuck:** Getting an optimized solution from brute force
+- **The "aha" / trick:** Mention of a count or frequency of the charecters in a string
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-07-21
+
 
 ### Example: Longest Substring Without Repeating Characters — NC 3
 - **Date:** 2026-07-14
