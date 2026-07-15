@@ -23,6 +23,43 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 
 ## Entries
 
+### Contains Duplicate — AH 1
+- **Date:** 2026-07-14
+- **Topic/Pattern:** Arrays and Hashing
+- **Signal I used to recognize it:** Talking about arrays and time complexity O(n)
+- **Brute force approach:** two for loops to check for each element and return true or false
+- **Optimized approach:** Using Hashmap and check if key exists or not
+- **Time / Space:** O(n)
+- **Where I got stuck:** Implementation of hashmap. Begineer in cpp
+- **The "aha" / trick:** Counting the frequency of a number means it must be a hashmap
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-07-21
+
+### Valid Anagram — AH 2
+- **Date:** 2026-07-14
+- **Topic/Pattern:** Arrays and Hashing
+- **Signal I used to recognize it:** Talking about frequency and count of a string
+- **Brute force approach:** Using two hashmaps and inserting the frequencies and then checking whether they are equal or not
+- **Optimized approach:** Using a single hashmap and incrementing from one string, decrementing in another and at last checking the values are 0 or not
+- **Time / Space:** O(n)
+- **Where I got stuck:** Implementation to check the values in hashmap
+- **The "aha" / trick:** Mention of a count or frequency of the charecters in a string
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-07-21
+
+### Two Sum — AH 3
+- **Date:** 2026-07-14
+- **Topic/Pattern:** Arrays and Hashing
+- **Signal I used to recognize it:** We have to remember previous numbers to compare them 
+- **Brute force approach:** Using two for loops and adding the numbers to find if it is equal to target or not
+- **Optimized approach:** Using a hashmap where we store the number and its index as key value pair
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Since we have to compare the numbers which came before too. We use a hashmap
+- **Confidence (1-5):** 5
+- **Revisit by:** 2026-07-21
+
+
 ### Example: Longest Substring Without Repeating Characters — NC 3
 - **Date:** 2026-07-14
 - **Topic/Pattern:** Sliding Window
