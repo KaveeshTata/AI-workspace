@@ -71,6 +71,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-07-21
 
+### Top k Frequent elements — AH 5
+- **Date:** 2026-07-16
+- **Topic/Pattern:** Arrays and Hashing
+- **Signal I used to recognize it:** Talking about frequency and sorting
+- **Brute force approach:** Use a frequency hashmap and then sort the values in descending order and return the top k elements
+- **Optimized approach:** Use a frequency map but instead of sorting use bucket sort algorithm and then iterate over it for top k elements
+- **Time / Space:** O(n*k)
+- **Where I got stuck:** Iterating to get the result for it
+- **The "aha" / trick:** Frequncy map and sorting because we need only top elements
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-07-21
+
+### Encode and decode — AH 6
+- **Date:** 2026-07-16
+- **Topic/Pattern:** Arrays and Hashing
+- **Signal I used to recognize it:** Encoding and decoding means a delimeter
+- **Brute force approach:** Add a delimiter after every string while encoding and decode based on the delimiter
+- **Optimized approach:** Use a count feature of every element in the vector add it before the delimiter so that while decoding we can get exact number of elements to be in the string in the vector
+- **Time / Space:** O(n*k)
+- **Where I got stuck:** Iterating delimeter and the count at once and leveraging them both
+- **The "aha" / trick:** Basically counting and delimiter means its easy just like Group anagrams
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-07-21
+
 
 ### Example: Longest Substring Without Repeating Characters — NC 3
 - **Date:** 2026-07-14
