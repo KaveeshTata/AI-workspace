@@ -95,16 +95,15 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-07-21
 
-
-### Example: Longest Substring Without Repeating Characters — NC 3
-- **Date:** 2026-07-14
-- **Topic/Pattern:** Sliding Window
-- **Signal I used to recognize it:** "contiguous substring" + "no repeating" = shrink/grow window
-- **Brute force approach:** check all substrings, O(n^3)
-- **Optimized approach:** expand right pointer, use set/map to detect repeats, shrink left when repeat found
-- **Time / Space:** O(n) / O(min(n, charset))
-- **Where I got stuck:** forgot to move left pointer to (last_seen_index + 1) instead of incrementing by 1
-- **The "aha" / trick:** store last seen index, jump left pointer directly instead of looping
+### Product except self — AH 7
+- **Date:** 2026-07-17
+- **Topic/Pattern:** Arrays and Hashing
+- **Signal I used to recognize it:** Product normally means looping through the elements and maintaining a variable to iterate
+- **Brute force approach:** Two nested for loops for getting the product
+- **Optimized approach:** Use a prefix and suffix approach and get the products of left to the element and right to the element. Then we multiply both the prefix and suffix vectors to get the output vector
+- **Time / Space:** O(n)
+- **Where I got stuck:** Initialising the vectors at the right index and iterating variables
+- **The "aha" / trick:** Actually got it from the hints section of the editor
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-07-21
 
