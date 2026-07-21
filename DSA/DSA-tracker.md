@@ -107,6 +107,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-07-21
 
+### Valid sudoku — AH 8
+- **Date:** 2026-07-21
+- **Topic/Pattern:** Arrays and Hashing
+- **Signal I used to recognize it:** no duplicates normally means a hash set
+- **Brute force approach:** Two nested for loops for checking rows and cols and then a 4 nested for loop for the square checking
+- **Optimized approach:** There is no specified optimized approach. The brute force is the best approach
+- **Time / Space:** O(n)
+- **Where I got stuck:** Square boxes indexing and loop variable initilisation
+- **The "aha" / trick:** Checking duplicates in O(1) time is always a hash set. So just be reading the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-07-28
+
 ---
 
 ## Weekly Review Checklist
