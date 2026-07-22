@@ -5,22 +5,6 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 
 ---
 
-## Template (copy this block for each new problem)
-
-### [Problem Name] — [NeetCode/LeetCode #]
-- **Date:**
-- **Topic/Pattern:** (e.g. Sliding Window, Two Pointers, BFS, DP-1D)
-- **Signal I used to recognize it:** (what in the problem statement pointed here?)
-- **Brute force approach:** (one line)
-- **Optimized approach:** (one line)
-- **Time / Space:**
-- **Where I got stuck:** (be honest — this is the highest-value field)
-- **The "aha" / trick:** (the one insight that unlocked it)
-- **Confidence (1-5):** (1 = total blank, 5 = solved cleanly under time)
-- **Revisit by:** (date — 1 week out if confidence ≤3)
-
----
-
 ## Entries
 
 ### Contains Duplicate — AH 1
@@ -116,6 +100,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Time / Space:** O(n)
 - **Where I got stuck:** Square boxes indexing and loop variable initilisation
 - **The "aha" / trick:** Checking duplicates in O(1) time is always a hash set. So just be reading the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-07-28
+
+### Longest Consecutive Subsequence — AH 9
+- **Date:** 2026-07-22
+- **Topic/Pattern:** Arrays and Hashing
+- **Signal I used to recognize it:** no duplicates normally means a hash set
+- **Brute force approach:** Sorting and then iterating using two nested loops to get the integer back
+- **Optimized approach:** Using hash set and checking whether the number is a starting of a subsequence or not. 
+- **Time / Space:** O(n)
+- **Where I got stuck:** indexing logic for iterating the hash set to get the solution
+- **The "aha" / trick:** Checking duplicates in O(1) time is always a hash set. So just be reading the question
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-07-28
+
+### Valid palindrome — TP 1
+- **Date:** 2026-07-22
+- **Topic/Pattern:** Two pointers
+- **Signal I used to recognize it:** Comparing two indices and updating it prallelly
+- **Brute force approach:** Preprocess the strings. Take two strings, iterate the input string from the back and from the front. Compare both
+- **Optimized approach:** Using two pointers simulateiously and returning false even if one of the does not comply
+- **Time / Space:** O(n)
+- **Where I got stuck:** Preprocessing the string to exclude the non alphanumeric elements
+- **The "aha" / trick:** Basically just by reading the question
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-07-28
 
