@@ -118,13 +118,37 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 ### Valid palindrome — TP 1
 - **Date:** 2026-07-22
 - **Topic/Pattern:** Two pointers
-- **Signal I used to recognize it:** Comparing two indices and updating it prallelly
+- **Signal I used to recognize it:** Comparing two indices and updating it parallely
 - **Brute force approach:** Preprocess the strings. Take two strings, iterate the input string from the back and from the front. Compare both
 - **Optimized approach:** Using two pointers simulateiously and returning false even if one of the does not comply
 - **Time / Space:** O(n)
 - **Where I got stuck:** Preprocessing the string to exclude the non alphanumeric elements
 - **The "aha" / trick:** Basically just by reading the question
 - **Confidence (1-5):** 4
+- **Revisit by:** 2026-07-28
+
+### Two Integer Sum II — TP 2
+- **Date:** 2026-07-23
+- **Topic/Pattern:** Two pointers
+- **Signal I used to recognize it:** Comparing two indices and updating it parallely
+- **Brute force approach:** Take nested for loops and look for all possible pairs which give the target. Which is O(n2)
+- **Optimized approach:** Using two pointers as it is already sorted we update the start and end based on their sum being greater or lesser than target and return 
+- **Time / Space:** O(n)
+- **Where I got stuck:** The 1-indexed solution return. Had to add 1
+- **The "aha" / trick:** Basically just by reading the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-07-28
+
+### 3Sum — TP 3
+- **Date:** 2026-07-24
+- **Topic/Pattern:** Two pointers
+- **Signal I used to recognize it:** Comparing two indices and updating it parallely
+- **Brute force approach:** Take nested for loops and look for all possible pairs which give the target. Which is O(n3)
+- **Optimized approach:** We fix one element and now the target is -(number we fixed) Then using two pointers as it is already sorted we update the start and end based on their sum being greater or lesser than target and return 
+- **Time / Space:** O(n2)
+- **Where I got stuck:** The duplicate solution must not be added. This was brutal
+- **The "aha" / trick:** It was just a two sum after fixing one element
+- **Confidence (1-5):** 2
 - **Revisit by:** 2026-07-28
 
 ---
