@@ -151,6 +151,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-07-28
 
+### Container With Most Water — TP 4
+- **Date:** 2026-07-25
+- **Topic/Pattern:** Two pointers
+- **Signal I used to recognize it:** Comparing two indices and updating it parallely
+- **Brute force approach:** Take nested for loops and look for all possible pairs which give the target. Which is O(n2)
+- **Optimized approach:** We take two pointer approach and check which height is less and move that pointer accordingly
+- **Time / Space:** O(n)
+- **Where I got stuck:** Handling the case when both the heights are equal
+- **The "aha" / trick:** It was just a two sum after knowing we need to move both the pointers with a condition
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-07-28
+
 ---
 
 ## Weekly Review Checklist
