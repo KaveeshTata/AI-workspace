@@ -163,6 +163,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-07-28
 
+### Trapping rain water — TP 5
+- **Date:** 2026-07-26
+- **Topic/Pattern:** Two pointers
+- **Signal I used to recognize it:** Honestly i did not know how to do it two pointers. So i could not recognixe it
+- **Brute force approach:** We take prefix and suffix sum for that position calculate it and then use the minimum of prefix[i] and suffix[i] to get the trapped water
+- **Optimized approach:** We take two pointers and maintain the leftmax and right max. We move the pointer which is minimum and proceed to add the trapped water to the variable
+- **Time / Space:** O(n)
+- **Where I got stuck:** Handling the two pointer approach. Could not even get the idea
+- **The "aha" / trick:** When i got to know that we only need left max and right max of the current poisition not all.
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-07-28
+
 ---
 
 ## Weekly Review Checklist
