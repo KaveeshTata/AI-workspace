@@ -135,7 +135,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Optimized approach:** Using two pointers as it is already sorted we update the start and end based on their sum being greater or lesser than target and return 
 - **Time / Space:** O(n)
 - **Where I got stuck:** The 1-indexed solution return. Had to add 1
-- **The "aha" / trick:** Basically just by reading the question
+- **The "aha" / trick:**  
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-07-28
 
@@ -173,6 +173,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Where I got stuck:** Handling the two pointer approach. Could not even get the idea
 - **The "aha" / trick:** When i got to know that we only need left max and right max of the current poisition not all.
 - **Confidence (1-5):** 2
+- **Revisit by:** 2026-07-28
+
+### Valid Parentheses  — ST 1
+- **Date:** 2026-07-27
+- **Topic/Pattern:** Stack
+- **Signal I used to recognize it:** Normally when anything want to be searched in the same order which they came in stack is the best DS for it
+- **Brute force approach:** We insert the opening brackets, then pop each one out in the same order, if it doesnt comply then we return false
+- **Optimized approach:** There is no optimized approach except we can use a hashmap also to get the mappings and use it instead of writing 3 if else statements
+- **Time / Space:** O(n)
+- **Where I got stuck:** Certain edge cases like ")" this returned nothing in my code
+- **The "aha" / trick:** Basically just by reading the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-07-28
+
+### Min Stack  — ST 2
+- **Date:** 2026-07-27
+- **Topic/Pattern:** Stack
+- **Signal I used to recognize it:** Normally when anything want to be searched in the same order which they came in stack is the best DS for it
+- **Brute force approach:** We take currentmin variable and track the minimum while inserting into the stack.
+- **Optimized approach:** We take a new array and push only when there is change in minimum, So when we pop we check whether minimum is popped or not, if yes we pop from the new stack too, if not it stays same
+- **Time / Space:** O(1)
+- **Where I got stuck:** No mistakes once got to know to use another stack track
+- **The "aha" / trick:** Got to know when we have to maintain the minimum after every push and pop, we needed a stack 
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-07-28
+
+### Evaluate Reverse Polish Notation  — ST 3
+- **Date:** 2026-07-27
+- **Topic/Pattern:** Stack
+- **Signal I used to recognize it:** Normally when anything want to be searched in the same order which they came in stack is the best DS for it
+- **Brute force approach:** We insert the integers and when operand comes we pop the elements in tbe stack and perform the operation and push the result
+- **Optimized approach:** There is no optimized approach 
+- **Time / Space:** O(n)
+- **Where I got stuck:** Wrong order for - and / because we have to do num2-num1 not num1-num2
+- **The "aha" / trick:** Basically just by reading the question
+- **Confidence (1-5):** 4
 - **Revisit by:** 2026-07-28
 
 ---
