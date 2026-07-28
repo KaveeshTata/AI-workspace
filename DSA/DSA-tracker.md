@@ -211,6 +211,20 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-07-28
 
+### Daily Temperatures  — ST 4
+- **Date:** 2026-07-28
+- **Topic/Pattern:** Stack
+- **Signal I used to recognize it:** We need decresing order which means monotonic stack
+- **Brute force approach:** We check for the next large temperature and find the index of it and push it into the sol vector
+- **Optimized approach:** We can use monotonic stack where we store indices and check whether the top of the stack is greater than the current element, If it is push it. If its not then we pop it find the index difference and store it in sol vector
+- **Time / Space:** O(n)
+- **Where I got stuck:** Got the basic logic but could not figure out we can store indices instead of temperatures
+- **The "aha" / trick:** Basically just by reading the question
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-04
+
+
+
 ---
 
 ## Weekly Review Checklist
