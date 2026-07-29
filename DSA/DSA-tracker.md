@@ -223,7 +223,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-04
 
-
+### Car Fleet  — ST 5
+- **Date:** 2026-07-29
+- **Topic/Pattern:** Stack
+- **Signal I used to recognize it:** We need decresing order and one after the other, depends only on the car infront thats it
+- **Brute force approach:** We sort and calculate the times and then iterate over all seeing which one is slower and faster for each pair.
+- **Optimized approach:** We sort the elements and calculate the time. We push when only the current time is greater than the top of the stack. We return the stack size
+- **Time / Space:** O(nlogn)
+- **Where I got stuck:** The pair can be sorted or not. Basic implementation 
+- **The "aha" / trick:** Because of previous problem of monotonic stack.
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-04
 
 ---
 
