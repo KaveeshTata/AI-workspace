@@ -235,6 +235,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-04
 
+### Largest Rectangle In Histogram  — ST 6
+- **Date:** 2026-07-29
+- **Topic/Pattern:** Stack
+- **Signal I used to recognize it:** We need decresing order and one after the other, depends only on the car infront thats it
+- **Brute force approach:** We sort and calculate the times and then iterate over all seeing which one is slower and faster for each pair.
+- **Optimized approach:** We sort the elements and calculate the time. We push when only the current time is greater than the top of the stack. We return the stack size
+- **Time / Space:** O(nlogn)
+- **Where I got stuck:** The pair can be sorted or not. Basic implementation 
+- **The "aha" / trick:** Because of previous problem of monotonic stack.
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-04
+
+### Binary Search  — BS 1
+- **Date:** 2026-07-30
+- **Topic/Pattern:** Binary Search
+- **Signal I used to recognize it:** Sorting in logn time is almost always binary search
+- **Brute force approach:** We use normal for loop and iterate over it to find the target element
+- **Optimized approach:** We use binary search and reduce the search array by half every time we iterate which reduces the time by a factor of 2
+- **Time / Space:** O(logn)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically by looking at the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-04
+
+### Search a 2D Matrix  — BS 2
+- **Date:** 2026-07-30
+- **Topic/Pattern:** Binary Search
+- **Signal I used to recognize it:** Sorting in logn time is almost always binary search
+- **Brute force approach:** We use nested for loops and iterate over it to find the target element but it is O(n2)
+- **Optimized approach:** We can first find out which row the target is in by checking the first and last element of that row Then We use binary search and reduce the search array by half every time we iterate which reduces the time by a factor of 2
+- **Time / Space:** O(nlogn)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically by looking at the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-04
+
 ---
 
 ## Weekly Review Checklist
