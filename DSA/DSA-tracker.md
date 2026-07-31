@@ -271,6 +271,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-08-04
 
+### Koko Eating Bananas  — BS 3
+- **Date:** 2026-07-31
+- **Topic/Pattern:** Binary Search
+- **Signal I used to recognize it:** Sorting in logn time is almost always binary search
+- **Brute force approach:** We can use to check everything from 1 to max(piles) in the piles array and calculate the total time and then proceed
+- **Optimized approach:** We can use binary search and check whether mid is the rate which gives us less than the target time. If it does update the variable otherwise we change the start
+- **Time / Space:** O(nlogm)
+- **Where I got stuck:** Got stuck at calculating total time and got to the ceil function in CPP
+- **The "aha" / trick:** Basically by looking at the question
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-04
+
 ---
 
 ## Weekly Review Checklist
