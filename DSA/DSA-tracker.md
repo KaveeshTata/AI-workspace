@@ -283,6 +283,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-04
 
+### Find Minimum in Rotated Sorted Array  — BS 4
+- **Date:** 2026-08-01
+- **Topic/Pattern:** Binary Search
+- **Signal I used to recognize it:** Sorting in logn time is almost always binary search
+- **Brute force approach:** We can finf the pivot and check which side has the minimum element
+- **Optimized approach:** We csn binary search as we know two of start, end or mid will always be on the same side
+- **Time / Space:** O(logn)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically by looking at the question
+- **Confidence (1-5):** 5
+- **Revisit by:** 2026-08-04
+
+### Search in Rotated Sorted Array  — BS 5
+- **Date:** 2026-08-01
+- **Topic/Pattern:** Binary Search
+- **Signal I used to recognize it:** Sorting in logn time is almost always binary search
+- **Brute force approach:** We can finf the pivot and check which side has the target and then do binary search on that half
+- **Optimized approach:** We csn binary search as we know two of start, end or mid will always be on the same side
+- **Time / Space:** O(logn)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically by looking at the question
+- **Confidence (1-5):** 5
+- **Revisit by:** 2026-08-04
+
 ---
 
 ## Weekly Review Checklist
