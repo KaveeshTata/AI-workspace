@@ -307,6 +307,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 5
 - **Revisit by:** 2026-08-04
 
+### Time Based Key-Value Store  — BS 6
+- **Date:** 2026-08-02
+- **Topic/Pattern:** Binary Search
+- **Signal I used to recognize it:** Sorting in logn time is almost always binary search
+- **Brute force approach:** Everything is same but we use linear search instead of binary search
+- **Optimized approach:** We use binary search and check anything <= given timestamp is the latest one and valid one
+- **Time / Space:** O(logn)
+- **Where I got stuck:** At getting the latest value if the timestamp is not equal to the one given
+- **The "aha" / trick:** Basically by looking at the question
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-04
+
 ---
 
 ## Weekly Review Checklist
