@@ -319,6 +319,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-04
 
+### Median of Two Sorted Arrays  — BS 7
+- **Date:** 2026-08-03
+- **Topic/Pattern:** Binary Search
+- **Signal I used to recognize it:** Sorting in logn time is almost always binary search
+- **Brute force approach:** Everything is same but we use linear search instead of binary search
+- **Optimized approach:** We merge both the arrays and get the median with the help of nth_element.
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically by looking at the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-04
+
 ---
 
 ## Weekly Review Checklist
