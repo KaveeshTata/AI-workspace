@@ -236,16 +236,16 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Revisit by:** 2026-08-04
 
 ### Largest Rectangle In Histogram  — ST 6
-- **Date:** 2026-07-29
+- **Date:** 2026-08-04
 - **Topic/Pattern:** Stack
-- **Signal I used to recognize it:** We need decresing order and one after the other, depends only on the car infront thats it
-- **Brute force approach:** We sort and calculate the times and then iterate over all seeing which one is slower and faster for each pair.
-- **Optimized approach:** We sort the elements and calculate the time. We push when only the current time is greater than the top of the stack. We return the stack size
-- **Time / Space:** O(nlogn)
-- **Where I got stuck:** The pair can be sorted or not. Basic implementation 
+- **Signal I used to recognize it:** We have to keep track of the left and right of the current index to get the maximum area. This is like trapping rain water
+- **Brute force approach:** We calculate the left and right until we get smaller height and then stop to calculate the area
+- **Optimized approach:** We use increasing stack where we push the indices until we get a smaller than the top and then pop until we get a bigger one and calculate the area simltaneously for every element popped and get the max area
+- **Time / Space:** O(n)
+- **Where I got stuck:** Had no idea about optimised approach. Need to practice more like this
 - **The "aha" / trick:** Because of previous problem of monotonic stack.
-- **Confidence (1-5):** 3
-- **Revisit by:** 2026-08-04
+- **Confidence (1-5):** 1
+- **Revisit by:** 2026-08-11
 
 ### Binary Search  — BS 1
 - **Date:** 2026-07-30
@@ -331,6 +331,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-08-04
 
+### Best Time to Buy and Sell Stock  — SW 1
+- **Date:** 2026-08-04
+- **Topic/Pattern:** Sliding window
+- **Signal I used to recognize it:** The most basic sliding window problem where we have to keep track of a window to buy and sell with a condition
+- **Brute force approach:** Iterate through for loops and find the best time to buy and sell
+- **Optimized approach:** Use sliding window to keep track of the max profit and the minimum to buy a stock
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically by looking at the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-11
 ---
 
 ## Weekly Review Checklist
