@@ -342,6 +342,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Basically by looking at the question
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-08-11
+
+### Longest Substring Without Repeating Characters — SW 2
+- **Date:** 2026-08-05
+- **Topic/Pattern:** Sliding window
+- **Signal I used to recognize it:** We have to calculate maximum continuous of something which generally means sliding window
+- **Brute force approach:** We can iterate through the entire string until there is a duplicate, note the length and then incremenet to next charecter. Do it again and again
+- **Optimized approach:** We can use sliding window where the invalid condition is if there is a repeating charecter, We can use a hash map to keep track and we move the left pointer until there is no duplicate in the substring and continue. We can take the maximum of all the values
+- **Time / Space:** O(n)
+- **Where I got stuck:** Looping through the left and right correctly and tracking the letters
+- **The "aha" / trick:** moving the left pointer and updating the map simultaneously
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-11
+
+### Longest Substring Without Repeating Characters — SW 3
+- **Date:** 2026-08-05
+- **Topic/Pattern:** Sliding window
+- **Signal I used to recognize it:** We have to calculate maximum continuous of something which generally means sliding window
+- **Brute force approach:** We can iterate through the entire string until there is a duplicate, note the length and then incremenet to next charecter. Do it again and again
+- **Optimized approach:** We can use sliding window where the invalid condition is if there is a repeating charecter, We can use a hash map to keep track and we move the left pointer until there is no duplicate in the substring and continue. We can take the maximum of all the values
+- **Time / Space:** O(n)
+- **Where I got stuck:** Looping through the left and right correctly and tracking the letters
+- **The "aha" / trick:** moving the left pointer and updating the map simultaneously
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-11
+
+### Permutation in String  — SW 4
+- **Date:** 2026-08-05
+- **Topic/Pattern:** Sliding window
+- **Signal I used to recognize it:** fixed size and check something inside the window is generally sliding window
+- **Brute force approach:** We can iterate through the string and see if it is equal. That will O(n2) or even O(n3)
+- **Optimized approach:** We can use a sliding wondow where the size is fixed to first string and we slide across the second string and check whether the maps are equal or not.
+- **Time / Space:** O(n)
+- **Where I got stuck:** Updating the maps simulataneously moving the pointer is somewhat tricky
+- **The "aha" / trick:** Using hash maps to compare is perfect althogh they take space, maybe we can use vectors
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-11
 ---
 
 ## Weekly Review Checklist
