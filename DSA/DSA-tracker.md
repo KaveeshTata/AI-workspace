@@ -355,14 +355,14 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-11
 
-### Longest Substring Without Repeating Characters — SW 3
-- **Date:** 2026-08-05
+### Longest Repeating Character Replacement — SW 3
+- **Date:** 2026-08-06
 - **Topic/Pattern:** Sliding window
 - **Signal I used to recognize it:** We have to calculate maximum continuous of something which generally means sliding window
-- **Brute force approach:** We can iterate through the entire string until there is a duplicate, note the length and then incremenet to next charecter. Do it again and again
-- **Optimized approach:** We can use sliding window where the invalid condition is if there is a repeating charecter, We can use a hash map to keep track and we move the left pointer until there is no duplicate in the substring and continue. We can take the maximum of all the values
+- **Brute force approach:** We can check each substring and find out the maximum frequency in that substring and check whether the number of replacements will be less than or equal to k but that woulkd O(n2)
+- **Optimized approach:** We can use sliding window approach where we keep track of max frequency of that window, we move right until the number of replacements we can to exceed k, then we shrink the window.
 - **Time / Space:** O(n)
-- **Where I got stuck:** Looping through the left and right correctly and tracking the letters
+- **Where I got stuck:** Find max frequency without using a spearate function
 - **The "aha" / trick:** moving the left pointer and updating the map simultaneously
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-11
@@ -375,6 +375,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Optimized approach:** We can use a sliding wondow where the size is fixed to first string and we slide across the second string and check whether the maps are equal or not.
 - **Time / Space:** O(n)
 - **Where I got stuck:** Updating the maps simulataneously moving the pointer is somewhat tricky
+- **The "aha" / trick:** Using hash maps to compare is perfect althogh they take space, maybe we can use vectors
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-11
+
+### Minimum Window Substring  — SW 5
+- **Date:** 2026-08-06
+- **Topic/Pattern:** Sliding window
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can iterate through each substring and check the condition but that would be O(n2)
+- **Optimized approach:** We use sliding window and to keep track of the frequency we use hash map, We check whether our window hashmap contains the charecters which the tracking map has, We shrink when it until it doesnt and return the minimum
+- **Time / Space:** O(n)
+- **Where I got stuck:** Updating the maps simulataneously moving the pointer is somewhat tricky
+- **The "aha" / trick:** Using hash maps to compare is perfect althogh they take space, maybe we can use vectors
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-11
+
+### Sliding Window Maximum — SW 6
+- **Date:** 2026-08-06
+- **Topic/Pattern:** Sliding window
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can iterate through each substring and check the condition but that would be O(n2)
+- **Optimized approach:** We use sliding window with fixed window size and check max element for each window. It is O(n2) but the optimised approach is deque which i dont know yet
+- **Time / Space:** O(n2)
+- **Where I got stuck:** order of Pushing the elements and updating the variables 
 - **The "aha" / trick:** Using hash maps to compare is perfect althogh they take space, maybe we can use vectors
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-11
