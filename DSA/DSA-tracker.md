@@ -402,6 +402,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Using hash maps to compare is perfect althogh they take space, maybe we can use vectors
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-11
+
+### Reverse Linked List — LL 1
+- **Date:** 2026-08-07
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can take a new linked list and iterate backwards to create a reversed linked list but that takes up more space
+- **Optimized approach:** We can keep track of the previous, current and the next pointers and traverse to change their direction
+- **Time / Space:** O(n)
+- **Where I got stuck:** Which pointer to return 
+- **The "aha" / trick:** Basically the last pointer to leave is the pointer to return 
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-11
+
+### Merge Two Sorted Linked Lists — LL 2
+- **Date:** 2026-08-07
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can turn them into arrays and merge them and sort, then convert them to linked lists
+- **Optimized approach:** We can initialise a dummy node and a tail to keep track and change the next pointers to the least element
+- **Time / Space:** O(n)
+- **Where I got stuck:** How to initialise a dummy vector in O(1) memory
+- **The "aha" / trick:** Just initialise listnode instead of a ptr
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-11
 ---
 
 ## Weekly Review Checklist
