@@ -426,6 +426,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Just initialise listnode instead of a ptr
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-08-11
+
+### Linked List Cycle Detection — LL 3
+- **Date:** 2026-08-08
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use hash set to keep track of the addresses of the pointers, if it repeats we return true else false
+- **Optimized approach:** We can use fast and slow pointers and iterate until one of the becomes null or they meet, If they meet we return true
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** With fast and slow pointers they will always meet when there is a loop.
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-11
+
+### Reorder Linked List — LL 4
+- **Date:** 2026-08-08
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can turn it into an array then use two pointers to create an new array. Then we turn it into a linked list
+- **Optimized approach:** We use fast and slow pointers to get the middle element, then reverese the second part of the linked list. Then traverse it into a new linked list
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Finding the middle element is an eye opening idea. Noticing the pattern is not easy
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-11
+
+### Remove Nth Node From End of List — LL 5
+- **Date:** 2026-08-08
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can turn it into an array then we remove the element at index i, then convert it into linked list
+- **Optimized approach:** We calculate the length of the LL with iteration. Then we iterate until we get the nth element from the last and the delete it
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** There is no aha moment 
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-11
 ---
 
 ## Weekly Review Checklist
