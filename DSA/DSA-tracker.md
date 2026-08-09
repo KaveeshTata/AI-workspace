@@ -462,6 +462,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** There is no aha moment 
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-08-11
+
+### Copy Linked List with Random Pointer — LL 6
+- **Date:** 2026-08-09
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use hashmap and keep track of all the pointers with old nodes. Then we create a new LL and attach the mapped random pointer to the new one
+- **Optimized approach:** We can also attach the new pointers after the old node and we can find the random because the new nodes would be next to the old nodes then we split the new nodex separately
+- **Time / Space:** O(n)
+- **Where I got stuck:** How to create the new nodes syntax
+- **The "aha" / trick:** Using hashmap to map it and then use it is a good idea
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-11
 ---
 
 ## Weekly Review Checklist
