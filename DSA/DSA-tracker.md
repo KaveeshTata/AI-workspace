@@ -498,6 +498,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Finding the element rather than if it is a loop or not.
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-11
+
+### LRU Cache — LL 9
+- **Date:** 2026-08-11
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use arrayList and hashmap to keep track and change the LRU easily but it takes memory O(n)
+- **Optimized approach:** We can use hashmap to keep track of the key and the pointer pointing to the key, value pair. Using a doubly linked list we can track LRU and MRU with two pointers always pointing to the LRU and the right to the MRU
+- **Time / Space:** O(n)
+- **Where I got stuck:** Initialising the variables is a nightmare
+- **The "aha" / trick:** Using left and rights pointers to always track and slide for LRU is efficient
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-08-11
+
+### Merge K Sorted Linked Lists — LL 10
+- **Date:** 2026-08-11
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use merge two lists function, and merge each list one by one by storing it and moving to next one.
+- **Optimized approach:** We can use divide and conquer method where we recursively call the divide function to split the lists and then use ,merge two lists function to conquer it 
+- **Time / Space:** O(n)
+- **Where I got stuck:** Optimized approach idea
+- **The "aha" / trick:** D & C is a game changer whenever we can think to split rather than sequentially solve it
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-08-11
+
+### Reverse Nodes in K-Group — LL 11
+- **Date:** 2026-08-11
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** Split all of them into size of k, reverse all of them and then koin them. This takes O(n2)
+- **Optimized approach:** We can keep track of the currhead, currtail, previoustail and nexthead. This will help us in reversing and joining simulataneously.
+- **Time / Space:** O(n)
+- **Where I got stuck:** Optimized approach idea
+- **The "aha" / trick:** I first though we have to divide the LL into two and solve but then I realised there can be multiple lists
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-08-11
 ---
 
 ## Weekly Review Checklist
