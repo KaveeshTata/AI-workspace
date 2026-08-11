@@ -474,6 +474,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Using hashmap to map it and then use it is a good idea
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-11
+
+### Add Two Numbers — LL 7
+- **Date:** 2026-08-10
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can convert the LL into array of integers, add them and convert them to linked lists again
+- **Optimized approach:** We can create new nodes and a new LL with the added values
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** No particular aha moment. It was a straightforward question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-11
+
+### Find the Duplicate Number — LL 8
+- **Date:** 2026-08-10
+- **Topic/Pattern:** Linked list
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use hashset to check which element is coming more than once. Or else we can mark the index as negative when we visit as the elements are always between 1 and len(nums). if it is already negative, which means it is already visited then we return that index
+- **Optimized approach:** We can treat it as LL, then we can use fast and slow pointers to find the element as it will form a loop if there is a duplicate
+- **Time / Space:** O(n)
+- **Where I got stuck:** How to point it to the next element without using pointers
+- **The "aha" / trick:** Finding the element rather than if it is a loop or not.
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-11
 ---
 
 ## Weekly Review Checklist
