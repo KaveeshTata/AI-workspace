@@ -534,6 +534,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** I first though we have to divide the LL into two and solve but then I realised there can be multiple lists
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-08-11
+
+### Invert Binary Tree — BT 1
+- **Date:** 2026-08-12
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion to track the left and right nodes and then swap when it reaches end
+- **Optimized approach:** The optimized approach would be iterative DFS but it is still O(n)
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically just by looking at the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-18
+
+### Maximum Depth of Binary Tree — BT 2
+- **Date:** 2026-08-12
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion to track the left and right nodes and then have a running maximum and return it when it reaches end
+- **Optimized approach:** No actual optimised approach
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically just by looking at the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-18
+
+### Diameter of Binary Tree — BT 3
+- **Date:** 2026-08-12
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion to track the left and right nodes, cover all the three possibilities where it would be in only the left of root or right of root, or it would be the sum of left height and right height
+- **Optimized approach:** We can use vector pair and then track height and the recursion simultaneously in O(n)
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically just by looking at the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-18
 ---
 
 ## Weekly Review Checklist
