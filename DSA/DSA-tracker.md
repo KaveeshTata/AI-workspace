@@ -570,6 +570,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Basically just by looking at the question
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-08-18
+
+### Balanced Binary Tree — BT 4
+- **Date:** 2026-08-13
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion and check the height difference while recursing and return if it is less than or equal to 1
+- **Optimized approach:** We can keep track of height and whether it is balanced or not simultaneously in pairs and check parallelly.
+- **Time / Space:** O(n)
+- **Where I got stuck:** Return statement is a bit tricky
+- **The "aha" / trick:** Basically just by looking at the question
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-18
+
+### Same Binary Tree — BT 5
+- **Date:** 2026-08-13
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion and check whether the val is same for both sides or not but this is O(n2)
+- **Optimized approach:** We can do iterative DFS with our own stack and check whether the vals are equal and then push their left and right nodes after popping the compared ones
+- **Time / Space:** O(n)
+- **Where I got stuck:** Checking the edge cases where one of the is nullptr etc
+- **The "aha" / trick:** Basically just by looking at the question
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-18
+
+### Subtree of Another Tree — BT 6
+- **Date:** 2026-08-13
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion and check whether the the root is equal to subtree when it is we send it to recursive Same tree function and check
+- **Optimized approach:** We can change the recursive sameTree function to iterative DFS
+- **Time / Space:** O(n*m)
+- **Where I got stuck:** The order of checking and recursing simultaneously is a challenge
+- **The "aha" / trick:** Basically just by looking at the question
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-18
 ---
 
 ## Weekly Review Checklist
