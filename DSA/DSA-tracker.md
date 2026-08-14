@@ -606,6 +606,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Basically just by looking at the question
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-18
+
+### Lowest Common Ancestor in Binary Search Tree — BT 7
+- **Date:** 2026-08-14
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion and check whether the p and q values are greater than or less than the curr node, then traverse accordingly as it is a BST
+- **Optimized approach:** Instead of recursive, we can use iteration where the space complexity is O(1)
+- **Time / Space:** O(n)
+- **Where I got stuck:** Returning the LCA when the node itself is p or q
+- **The "aha" / trick:** There can only be two different cases where the root of the subtree containing p and q will be LCA or the p,q itself will be LCA
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-18
+
+### Binary Tree Level Order Traversa — BT 8
+- **Date:** 2026-08-14
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion and keep track of depth, when the size is equal to depth, we push the elements and return it and recurse it
+- **Optimized approach:** Instead of recursion we can use iteration with a separator and every time the separator appears in the queue, we will push the vector into the answer
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Using a separator was very efficient
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-18
+
+### Binary Tree Right Side View — BT 9
+- **Date:** 2026-08-14
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion and keep track of depth, when the size is equal to depth, we push the last element of that level and return it and recurse it
+- **Optimized approach:** Instead of recursion we can use iteration with a separator and every time the separator appears in the queue, we will push the last element of the vector into the answer
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Using a separator was very efficient
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-18
 ---
 
 ## Weekly Review Checklist
