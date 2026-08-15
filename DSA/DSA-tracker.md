@@ -642,6 +642,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Using a separator was very efficient
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-08-18
+
+### Count Good Nodes in Binary Tree — BT 10
+- **Date:** 2026-08-15
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use recursion and keep track of the max value until then to determine which is the good node and which is not
+- **Optimized approach:** Instead of recursion we can our own queue to simulate the recursion, if the front value is less than the max value we increase the count
+- **Time / Space:** O(n)
+- **Where I got stuck:** What to return if the count variable is global
+- **The "aha" / trick:** Using it as a global variable is not needed we just return the count after everything is done
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-18
+
+### Valid Binary Search Tree — BT 11
+- **Date:** 2026-08-15
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use Recursion to find inorder traversal and we compare with the sorted array of itself. If they are same then it is a valid BST
+- **Optimized approach:** We can use the boundaries where the left side will always be in the range of less than root and right side is range of greater than root
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** No aha trick just a trick to make it easier
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-18
+
+### Kth Smallest Integer in BST — BT 12
+- **Date:** 2026-08-15
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can convert the tree into array and sort it to return the kthe smallest integer, but that would take O(nlogn)
+- **Optimized approach:** We can use inorder traversal. By morris traversal technique we can get the array and just return k - 1th element from that array
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** No aha trick just a trick to make it easier
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-08-18
 ---
 
 ## Weekly Review Checklist
