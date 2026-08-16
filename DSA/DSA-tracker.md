@@ -678,6 +678,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** No aha trick just a trick to make it easier
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-08-18
+
+### Kth Smallest Integer in BST — BT 13
+- **Date:** 2026-08-16
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We have to traverse the preorder and look for the index of that element in inorder, then we build the tree using recursion as we now know the left and right subtree
+- **Optimized approach:** We can use hashmap instead of linear search which will reduce the time thats it 
+- **Time / Space:** O(n)
+- **Where I got stuck:** Initial concept grasping is very hard for this
+- **The "aha" / trick:** Finding the index in inorder for that preorder element is important and mind blowing 
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-08-18
 ---
 
 ## Weekly Review Checklist
