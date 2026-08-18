@@ -690,6 +690,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Finding the index in inorder for that preorder element is important and mind blowing 
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-08-18
+
+### Binary Tree Maximum Path Sum — BT 14
+- **Date:** 2026-08-18
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can check the sum of all the possible subtrees and return the maximum sum. This will take O(n2)
+- **Optimized approach:** We can keep track of the max sum while traversing as there can only be three possibilities where the root is part is the connection between left and right subtree, Or root is a part of a higher subtree, Or the root is the starting point of the subtree
+- **Time / Space:** O(n)
+- **Where I got stuck:** Returning the value in the helper function
+- **The "aha" / trick:** Basically the max value would be the sum of the root value and the left max and the right max
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-08-25
 ---
 
 ## Weekly Review Checklist
