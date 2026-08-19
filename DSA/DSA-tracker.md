@@ -702,6 +702,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Basically the max value would be the sum of the root value and the left max and the right max
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-08-25
+
+### Binary Tree Maximum Path Sum — BT 15
+- **Date:** 2026-08-19
+- **Topic/Pattern:** Binary trees
+- **Signal I used to recognize it:** Just by looking at the question
+- **Brute force approach:** We can use DFS and recursion for serialize and deserialize. Using N as the delimiter for null and traverse it. Although this is good, it takes up too much space.
+- **Optimized approach:** We can use BFS using queue and serialize easily with no extra space. For deserialize, we can use stringstream and traverse through the string. Using a queue again we can create a new node for left and right.
+- **Time / Space:** O(n)
+- **Where I got stuck:** Deserialize travering through the string is tougher than expected
+- **The "aha" / trick:** We can use stringstream for traversing the string easily
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-25
 ---
 
 ## Weekly Review Checklist
