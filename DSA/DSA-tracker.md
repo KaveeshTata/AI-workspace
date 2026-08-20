@@ -714,6 +714,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** We can use stringstream for traversing the string easily
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-25
+
+### Subsets — BA 1
+- **Date:** 2026-08-20
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can iterate through the vector and get all the possible subsets
+- **Optimized approach:** We can use DFS recursion and do the same but somewhat neater
+- **Time / Space:** O(n * 2^n)
+- **Where I got stuck:** The return base condition is tricky
+- **The "aha" / trick:** If the i value is more than size of the vector
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-25
 ---
 
 ## Weekly Review Checklist
