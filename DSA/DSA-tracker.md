@@ -726,6 +726,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** If the i value is more than size of the vector
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-25
+
+### Subsets — BA 2
+- **Date:** 2026-08-21
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can iterate through the vector and get all the possible subsets and then check whether that vector exists or not and then move on
+- **Optimized approach:** We can use recursion and becktracking but while backtracking we move the index to the element where it is not equal to the element before. The array will already be sorted so then we can backtrack without any duplicates
+- **Time / Space:** O(n * 2^n)
+- **Where I got stuck:** Did not get the idea to sort it before itself
+- **The "aha" / trick:** But once it is sorted then it is almost like the problem before
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-25
 ---
 
 ## Weekly Review Checklist
