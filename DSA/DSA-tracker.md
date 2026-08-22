@@ -738,6 +738,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** But once it is sorted then it is almost like the problem before
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-25
+
+### Permutations — BA 3
+- **Date:** 2026-08-22
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can iterate through the vector and get all the possible permutations
+- **Optimized approach:** We can use recursion and backtracking where we return when the index is n and we traverse the index and swap it with the all possible numbers from the array and then return them
+- **Time / Space:** O(n! * n^2)
+- **Where I got stuck:** Backtracking is tricky
+- **The "aha" / trick:** We just swap back the values again. Thats it
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-25
 ---
 
 ## Weekly Review Checklist
