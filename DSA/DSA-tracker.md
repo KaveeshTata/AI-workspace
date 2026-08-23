@@ -750,6 +750,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** We just swap back the values again. Thats it
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-25
+
+### N Queens — BA 4
+- **Date:** 2026-08-23
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can iterate through the vector and get all the possible permutations maybe using hashset or visited array
+- **Optimized approach:** We can use recursion and backtracking where we place a queen in a row and check whether it is safe or not, then move to next row, if we do not have any possible places for the next queen, we backtrack and change the position of the queen and then recurse again until we have a valid set
+- **Time / Space:** O(n!)
+- **Where I got stuck:** Tend to overthink the permutations
+- **The "aha" / trick:** Changing the problem to arranging n queens to n rows is the core idea
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-25
 ---
 
 ## Weekly Review Checklist
