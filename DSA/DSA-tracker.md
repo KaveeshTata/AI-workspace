@@ -762,6 +762,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Changing the problem to arranging n queens to n rows is the core idea
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-25
+
+### Combination Sum — BA 5
+- **Date:** 2026-08-24
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can use recursion and backtracking for the three cases that we have, The first is one where element occurs single time, then the element occurs multiple times, and at last the element does not occur. According to the condition we move the index and update the target.We use a hash set to remove the duplicates.
+- **Optimized approach:** Instead of hash set which only filters at the last. We cna stop it before creating a combination, we can sort the array given and check if the next element is same as the present and then continue.
+- **Time / Space:** O(2^n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Basically the three cases will solve the problem
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-25
+
+### Combination Sum — BA 6
+- **Date:** 2026-08-24
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can use recursion and backtracking for the two cases that we have, The first is one where element occurs single time and the element does not occur. According to the condition we move the index and update the target.We use a hash set to remove the duplicates.
+- **Optimized approach:** Instead of hash set which only filters at the last. We can stop it before creating a combination, we can sort the array given and check if the next element is same as the present and then continue.
+- **Time / Space:** O(2^n)
+- **Where I got stuck:** The optimization is somewhat trickier than thought
+- **The "aha" / trick:** We have to remove the combination before it even generates because it will give better performance
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-25
 ---
 
 ## Weekly Review Checklist
