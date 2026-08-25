@@ -775,7 +775,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-25
 
-### Combination Sum — BA 6
+### Combination Sum 2 — BA 6
 - **Date:** 2026-08-24
 - **Topic/Pattern:** Backtracking
 - **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
@@ -784,6 +784,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Time / Space:** O(2^n)
 - **Where I got stuck:** The optimization is somewhat trickier than thought
 - **The "aha" / trick:** We have to remove the combination before it even generates because it will give better performance
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-08-25
+
+### Palindrome Partitioning — BA 7
+- **Date:** 2026-08-25
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can use recursion and backtracking for the two cases that we have, The first is one where we partition and seperate the strings and the next is we continue forward. Then we backtrack and find the possible vector of substrings
+- **Optimized approach:** The brute force is the efficient approach
+- **Time / Space:** O(n * 2^n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** The base case is pretty intresting which is when the string is empty
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-25
 ---
