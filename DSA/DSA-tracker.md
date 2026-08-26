@@ -798,6 +798,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** The base case is pretty intresting which is when the string is empty
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-08-25
+
+### Generate Parentheses — BA 8
+- **Date:** 2026-08-26
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can get all the possible ways of arrangementds and then we csn only return what is valid but this would take O(n * 2 ^ (2n))
+- **Optimized approach:** We can use recursion and backtrack while checking they are valid simultaneously when the size is 2n which is the valid size. If not we discard it otherwise we return it
+- **Time / Space:** O(n * 2^n)
+- **Where I got stuck:** They have to be all time throughout the iteration, the open must be equal to or greater than close brackets
+- **The "aha" / trick:** O(4n / sqrt(n))
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-09-01
 ---
 
 ## Weekly Review Checklist
