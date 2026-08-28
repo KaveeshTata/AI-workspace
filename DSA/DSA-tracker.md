@@ -807,8 +807,32 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Optimized approach:** We can use recursion and backtrack while checking they are valid simultaneously when the size is 2n which is the valid size. If not we discard it otherwise we return it
 - **Time / Space:** O(n * 2^n)
 - **Where I got stuck:** They have to be all time throughout the iteration, the open must be equal to or greater than close brackets
-- **The "aha" / trick:** O(4n / sqrt(n))
+- **The "aha" / trick:** So we track in every loop
 - **Confidence (1-5):** 2
+- **Revisit by:** 2026-09-01
+
+### Word Search — BA 9
+- **Date:** 2026-08-28
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can use a hash set or visited array to keep track of all the boxed we already visited, Then we recurse through up, down, left, right, if the word exists we return true otherwise false
+- **Optimized approach:** We can use the board itself to keep track of all the boxed we already visited by marking it with a special charecter, Then we recurse through up, down, left, right, if the word exists we return true otherwise false
+- **Time / Space:** O(m * 4^n)
+- **Where I got stuck:** Organizing the entire recursing is confusing
+- **The "aha" / trick:** So first we loop throughout the board thinking it is the first charecter and then recurse
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-01
+
+### Letter Combinations of a Phone Number — BA 10
+- **Date:** 2026-08-28
+- **Topic/Pattern:** Backtracking
+- **Signal I used to recognize it:** Collecting all the possible values. Normally recursion and backtracking
+- **Brute force approach:** We can keep track of the given digits, then loop around the charecters mapped to it, then its basically a problem of permutations
+- **Optimized approach:** There is no other bettwe method, all of them are practically the same
+- **Time / Space:** O(n * 4^n)
+- **Where I got stuck:** The mapping vector is where i got stuck
+- **The "aha" / trick:** I got it from the solution but its just basically the index of the vector is mapped with the chars
+- **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-01
 ---
 
