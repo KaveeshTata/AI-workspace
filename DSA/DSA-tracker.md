@@ -834,6 +834,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** I got it from the solution but its just basically the index of the vector is mapped with the chars
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-01
+
+### Implement Trie (Prefix Tree) — TI 1
+- **Date:** 2026-08-29
+- **Topic/Pattern:** Tries
+- **Signal I used to recognize it:** The question is about implementing tries
+- **Brute force approach:** We can check each word looping while using two pointers one in each word and then compare, if it does not match we return false for search.
+- **Optimized approach:** We can create Trie data structure where the node has a array of children of size 26 one for each letter and bool data type for marking end of word. Then we insert each letter of the string into the data structure. For seaarch we can match if it the same until the end of the string we return true.
+- **Time / Space:** O(L) length of largest word
+- **Where I got stuck:** The initialisation because of the endless loop error
+- **The "aha" / trick:** Create a seperate class or build an internal class for the data structure andf then create it 
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-01
 ---
 
 ## Weekly Review Checklist
