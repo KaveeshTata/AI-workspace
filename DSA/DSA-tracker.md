@@ -846,6 +846,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Create a seperate class or build an internal class for the data structure andf then create it 
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-01
+
+### Design Add and Search Word Data Structure — TI 2
+- **Date:** 2026-08-30
+- **Topic/Pattern:** Tries
+- **Signal I used to recognize it:** Searching and adding words in best time is always tries
+- **Brute force approach:** We can Add it into a array or a dictioanry and search for each word. When there is a dot we check for the rest of the word using recursion
+- **Optimized approach:** Or we can use trie. Adding is the same as before but now while searching we have an extra condition which is we have to check whether there is a letter in place of a dot and then recurse through all the possible paths.
+- **Time / Space:** O(L) length of largest word
+- **Where I got stuck:** Idea of just looping through all the 26 nodes and then recurse when it is a ","
+- **The "aha" / trick:** Same as before but just with an extra condition
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-01
 ---
 
 ## Weekly Review Checklist
