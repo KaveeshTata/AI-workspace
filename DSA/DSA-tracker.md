@@ -858,6 +858,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Same as before but just with an extra condition
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-01
+
+### Word Search II — TI 3
+- **Date:** 2026-08-31
+- **Topic/Pattern:** Tries
+- **Signal I used to recognize it:** Searching and adding words in best time is always tries
+- **Brute force approach:** It will basically be word search 1 backtracking looped throughout the words vector as we check for each of them it will get multiplied by n for the time complexity
+- **Optimized approach:** Instead we can use trie and we can search whether the letter from the board exists or not in O(1), which will reduce the time complexity
+- **Time / Space:** O(m * 4^n) length of largest word
+- **Where I got stuck:** Searching the element using trie does not need a seperate function because we are not checking for a word but only a charecter
+- **The "aha" / trick:** We just check if the children[idx], there exists a ptr of not. If not we move on to the next letter on the grid and start over the backtracking
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-09-01
 ---
 
 ## Weekly Review Checklist
