@@ -870,6 +870,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** We just check if the children[idx], there exists a ptr of not. If not we move on to the next letter on the grid and start over the backtracking
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-09-01
+
+### Kth Largest Element in a Stream — PQ 1
+- **Date:** 2026-09-01
+- **Topic/Pattern:** Heap/Priority Queue
+- **Signal I used to recognize it:** Kth largest or smallest is always priority Queue
+- **Brute force approach:** We first sort and then return the number in the index k - 1 for a given k
+- **Optimized approach:** We can use priority queue min heap where we push the elements until the size is k and then pop if it is greater than k while pushing
+- **Where I got stuck:** Usage of priority queues is new
+- **The "aha" / trick:** Initialise it and push the elements and automatically it will be converting into a sorted array 
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-08
 ---
 
 ## Weekly Review Checklist
