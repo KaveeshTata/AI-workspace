@@ -881,6 +881,28 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Initialise it and push the elements and automatically it will be converting into a sorted array 
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-08
+
+### Last Stone Weight— PQ 2
+- **Date:** 2026-09-02
+- **Topic/Pattern:** Heap/Priority Queue
+- **Signal I used to recognize it:** Kth largest or smallest is always priority Queue
+- **Brute force approach:** First sort then push the new number into the array and then sort again. this will take n^2logn time
+- **Optimized approach:** We can use priority queue max heap. We push all the elements first and then go on performing the conditions. Till we have single number and return it
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Just push all of them first instead of doing it parallelly
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-08
+
+### K Closest Points to Origin — PQ 3
+- **Date:** 2026-09-02
+- **Topic/Pattern:** Heap/Priority Queue
+- **Signal I used to recognize it:** Kth largest or smallest is always priority Queue
+- **Brute force approach:** First sort then we can calculate the distances and pair them with the coordinate and on and on until we have traverse all the elements
+- **Optimized approach:** We can use priority queue max heap and we can push only 2 closest distances with their coordinates. if it more than that we pop the elements
+- **Where I got stuck:** Got stuck at pair operations while returning the result
+- **The "aha" / trick:** We just find the top and then find the pair and then the element using a "." operator
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-08
 ---
 
 ## Weekly Review Checklist
