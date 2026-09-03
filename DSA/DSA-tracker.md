@@ -903,6 +903,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** We just find the top and then find the pair and then the element using a "." operator
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-08
+
+### Kth Largest Element in an Array — PQ 4
+- **Date:** 2026-09-03
+- **Topic/Pattern:** Heap/Priority Queue
+- **Signal I used to recognize it:** Kth largest or smallest is always priority Queue
+- **Brute force approach:** First sort then return the kth element from the last
+- **Optimized approach:** We can use priority queue minheap and push the elements and then when we have more than k elements we can pop them out
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Just use priority map or we can use quick select but that is another topic
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-08
 ---
 
 ## Weekly Review Checklist
