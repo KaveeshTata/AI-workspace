@@ -914,6 +914,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Just use priority map or we can use quick select but that is another topic
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-09-08
+
+### Task Scheduler — PQ 5
+- **Date:** 2026-09-04
+- **Topic/Pattern:** Heap/Priority Queue
+- **Signal I used to recognize it:** Kth largest or smallest is always priority Queue
+- **Brute force approach:** We take a normal array and we do not mimic the cool down room we just modify the existing array multiple times and parse through until all the counts become zero
+- **Optimized approach:** We can use priority queue max heap to store the counts in order and a queue to mimic a cooldown room. So while iterating the heap and the queue we pick which is the best option based on the cooldown time and counts alone in a single traversal
+- **Where I got stuck:** The cooldown time introduction made it a lot easier.
+- **The "aha" / trick:** Its basically a queue with a pair of integers. Has the count and the time when we can run it next according to the condition
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-08
 ---
 
 ## Weekly Review Checklist
