@@ -925,6 +925,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Its basically a queue with a pair of integers. Has the count and the time when we can run it next according to the condition
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-08
+
+### Design Twitter — PQ 6
+- **Date:** 2026-09-06
+- **Topic/Pattern:** Heap/Priority Queue
+- **Signal I used to recognize it:** Kth largest or smallest is always priority Queue
+- **Brute force approach:** We can use a hashmap to store the followers and tweets according to the userId. Then we sort the tweets based on the count or a timestamp which we get and return the top 10. But this would take O(n2 * log(tweets))
+- **Optimized approach:** Instead of sorting, we can use minHeap and sort based on the count in the tweets while pushing. Then we check for if the follower has any tweets and then return the top 10 tweets one by one
+- **Where I got stuck:** Getting top 10 tweets while checking the follower list and then organizing the doing it all parallelly is hard to imagine
+- **The "aha" / trick:** We can use hashmap properties and do it easily. We reduce the count instead of erasing it and then pop from the heap
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-09-08
 ---
 
 ## Weekly Review Checklist
