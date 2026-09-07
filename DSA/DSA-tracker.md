@@ -936,6 +936,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** We can use hashmap properties and do it easily. We reduce the count instead of erasing it and then pop from the heap
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-09-08
+
+### Find Median From Data Stream — PQ 7
+- **Date:** 2026-09-06
+- **Topic/Pattern:** Heap/Priority Queue
+- **Signal I used to recognize it:** Kth largest or smallest is always priority Queue
+- **Brute force approach:** We can use standard approach where we use vector and sort everytime a new number is added and then find the median easily but this takes O(n^2 logn)
+- **Optimized approach:** Instead we use priority queues where we use a min heap and max heap simultaneously maintain the elements required for finding a median. Whenever we push, we check the top elements and size and perform operations which will make them valid.
+- **Where I got stuck:** The idea of using min heap and max heap is difficult to get
+- **The "aha" / trick:** Use min heap and max heap
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-08
 ---
 
 ## Weekly Review Checklist
