@@ -947,6 +947,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Use min heap and max heap
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-08
+
+### Number of Islands — GR 1
+- **Date:** 2026-09-08
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs by assuming each connected graph is a component and each component is an island
+- **Brute force approach:** We can use DFS recursion and go all the four directions for every grid space when it is 1
+- **Optimized approach:** Optimised approach is the same as brute force in this case
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Its pretty much a simple problem of recursion without backtracking 
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-08
 ---
 
 ## Weekly Review Checklist
