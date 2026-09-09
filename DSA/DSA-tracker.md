@@ -959,6 +959,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** Its pretty much a simple problem of recursion without backtracking 
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-09-08
+
+### Max Area of Island — GR 2
+- **Date:** 2026-09-08
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs by assuming each connected graph is a component and each component is an island
+- **Brute force approach:** Same as last one but we return the area now, so we track all the ones by recursing through possible ways and return the area. Then we return the max area from all the possible areas
+- **Optimized approach:** Optimised approach is the same as brute force in this case
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** What to return, at first i tried using a count variable and increase it whenever we recurse, but that counted number of recursions rather than the area
+- **The "aha" / trick:** So we just return 1 for all possible recursions.
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-15
 ---
 
 ## Weekly Review Checklist
