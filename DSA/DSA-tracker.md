@@ -961,7 +961,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Revisit by:** 2026-09-08
 
 ### Max Area of Island — GR 2
-- **Date:** 2026-09-08
+- **Date:** 2026-09-09
 - **Topic/Pattern:** Graphs
 - **Signal I used to recognize it:** We can convert the problem to dfs by assuming each connected graph is a component and each component is an island
 - **Brute force approach:** Same as last one but we return the area now, so we track all the ones by recursing through possible ways and return the area. Then we return the max area from all the possible areas
@@ -969,6 +969,25 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Time / Space:** O(n * m)
 - **Where I got stuck:** What to return, at first i tried using a count variable and increase it whenever we recurse, but that counted number of recursions rather than the area
 - **The "aha" / trick:** So we just return 1 for all possible recursions.
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-15
+
+
+
+
+
+
+
+
+### Non-Cyclical Number — MG 4
+- **Date:** 2026-09-10
+- **Topic/Pattern:** Math and geometry
+- **Signal I used to recognize it:** There is nosignal in these problems 
+- **Brute force approach:** We can use hash set to check whether the element is repeating or not and when it does its a cycle, that means its a cyclic number
+- **Optimized approach:** We can use fast and slow pointer approach to detect a cycle, we continuously find the sum of squares of the digits but when the fast and slow pointer meet we know that it contains a cycle, which means its a cyclic number
+- **Time / Space:** O(log n)
+- **Where I got stuck:** The initial idea to initialise the pointers is pretty tricky
+- **The "aha" / trick:** So we initialise the slow pointer to n and the fast pointer to the function which calculates sum of squares
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-15
 ---
