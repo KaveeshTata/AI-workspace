@@ -972,6 +972,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-15
 
+### Islands and Treasure — GR 4
+- **Date:** 2026-09-11
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs by assuming each connected graph is a component and each component is an island
+- **Brute force approach:** We can use backtracking using dfs where we check all the routes through all four directions and return the steps we made got each grid positin where we have 1
+- **Optimized approach:** But instead we can use BFS or much better muktisource BFS where all the treasure points are pushed into the queue simultneously and then we check the neighbours simultaneously and the conditions. We then push the new neighbours into the queue.
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** How to count the steps for all the grid simuatneously
+- **The "aha" / trick:** We just have to increment the grid of the new dims with the old dims. That will give use the correct count
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-15
+
 
 
 
