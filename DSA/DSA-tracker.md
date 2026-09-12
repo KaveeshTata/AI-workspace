@@ -984,6 +984,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-15
 
+### Rotting Fruit — GR 5
+- **Date:** 2026-09-12
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs or bfs by assuming each connected graph is a component and each component is an island
+- **Brute force approach:** We can use dfs recursion to check all the rotten fruits at that point of time and go all four directions for all the rotten fruits to change them to rotten. At the end we return time 
+- **Optimized approach:** Or we can use BFS with queue. we insert all the rotten fruits into the queue at first and then travel all directions for all the rotten fruits. if we find a fresh fruit we change it to rotten and push it to the queue, then we increment time
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Normal BFS with queue, where we simltaneously look for all the rotten fruits
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-15
+
 
 
 
