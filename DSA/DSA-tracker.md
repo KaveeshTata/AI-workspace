@@ -996,6 +996,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-09-15
 
+### Pacific Atlantic Water Flow — GR 6
+- **Date:** 2026-09-14
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs or bfs by assuming each connected graph is a component and each component is an island
+- **Brute force approach:** We can use backtracking making each of them box as the starting point and push the row and col when it reaches the oceans.
+- **Optimized approach:** Or we can use DFS to calculate it. We take two bool vectors of size of the heights vector. Then we go in a reverse way. If we can reach the grid box from the oceans, we can say that we can reach the ocean vice versa. Hence we do a controlled dfs on the rows and cols which have pacific and atlantic given in the problem
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Got stuck at the condition to perform dfs. 
+- **The "aha" / trick:** So for pacific its from 0 to c and ROWS - 1 for atlantic then the same for rows r to 0 and r to COLS - 1
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-15
+
 
 
 
