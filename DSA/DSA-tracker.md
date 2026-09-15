@@ -1008,6 +1008,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-15
 
+### Surrounded Regions — GR 7
+- **Date:** 2026-09-15
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs or bfs by assuming each connected graph is a component and each component is an island
+- **Brute force approach:** We can use DFS or BFS. Both are optimised, Lets pick BFS first we push all the grid boxes which have 'O' and then we pop it and change it to T for future verification. Now we traverse through the immediate neighbours and push if it is 'O'. After its done we change all the T's to O's and O's to X's
+- **Optimized approach:** Above one is the optimised approach
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** The idea of bringing in T for future verification was helpful
+- **The "aha" / trick:** We change all the O's to T's and then at the end we change them back
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-22
+
+### Course Schedule — GR 8
+- **Date:** 2026-09-15
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs or bfs by assuming each connected graph. We can use topoogical sort or cycle detection
+- **Brute force approach:** So we use cycle detection using DFS where we take a visted bool array and recursion path bool vector, so for each surce node we mark vis and recPath as trhe, then we check for neighbours and if it is not visited we perform recursion, Or if it is visited and already present in recPath vector we know it is already a cycle. 
+- **Optimized approach:** Or we can use topological sort (Kahn's Algorithm)
+- **Time / Space:** O(n + m)
+- **Where I got stuck:** Changing the problem into a graph problem
+- **The "aha" / trick:** Its pretty much a directed acyclic graph 
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-22
+
 
 
 
