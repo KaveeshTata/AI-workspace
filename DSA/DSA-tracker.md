@@ -1032,6 +1032,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-22
 
+### Course Schedule II — GR 9
+- **Date:** 2026-09-16
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs or bfs by assuming each connected graph. We can use topoogical sort or cycle detection
+- **Brute force approach:** So we use cycle detection using DFS where we take a visted bool array and recursion path bool vector, so for each surce node we mark vis and recPath as trhe, then we check for neighbours and if it is not visited we perform recursion, Or if it is visited and already present in recPath vector we know it is already a cycle. Then we push the node inside
+- **Optimized approach:** Or we can use topological sort (Kahn's Algorithm)
+- **Time / Space:** O(n + m)
+- **Where I got stuck:** Changing the problem into a graph problem
+- **The "aha" / trick:** Its pretty much a directed acyclic graph 
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-22
+
 
 
 
