@@ -1044,6 +1044,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-22
 
+### Graph Valid Tree — GR 10
+- **Date:** 2026-09-17
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs or bfs by assuming each connected graph. We can use topoogical sort or cycle detection
+- **Brute force approach:** So we can use DFS or BFS. We just have to know whether the edges form a cycle or not. A tree is a non cyclic non directed graph. We already knows its non directed. So we use the approach where we check whether the given edges form a cycle using backedge case where we check if the neighbour is parent and visited or not
+- **Optimized approach:** The brute force is the optimised case
+- **Time / Space:** O(n + m)
+- **Where I got stuck:** Did not get stuck just the initial case of returning false when the number of edges is greater than n - 1
+- **The "aha" / trick:** We just write a base case
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-22
+
+### Graph Valid Tree — GR 11
+- **Date:** 2026-09-17
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs or bfs by assuming each connected graph. We can use topoogical sort or cycle detection
+- **Brute force approach:** It would just be normal bfs but we increment the result each time the bfs function because that means that the queue got empty before all the nodes were visited, hence we call the bfs function again until that queue is empty and again and again until all the nodes are visited
+- **Optimized approach:** The brute force is the optimised case
+- **Time / Space:** O(n + m)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** It was basically a normal bfs or dfs problem but we just have a to run a loop before calling the function as we have to confirm whether all the nodes are visited or not
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-22
+
+### Redundant Connection — GR 12
+- **Date:** 2026-09-17
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs or bfs by assuming each connected graph. We can use topoogical sort or cycle detection
+- **Brute force approach:** We cna use cycle detection with dfs where we use the backedge case. If there exists a cycle with that vertice, then that means that is our answer
+- **Optimized approach:** We can use topological sort (Kahns algorithm) to check this. We perform the regular inDegree calculation to check. If there is no cycle inDegree of all would be 0. So we loop through the edges and check their indegrees after the algorithm, if there exists a edge where its indegree is 2, then we know that ts a cyclic edge
+- **Time / Space:** O(n + m)
+- **Where I got stuck:** Got stuck at the last when calculating the indegree case for the edge which was responsible
+- **The "aha" / trick:** We just check indegree[u] == 2 and indegree[v] exists or not
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-22
+
 
 
 
