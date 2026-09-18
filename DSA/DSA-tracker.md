@@ -972,6 +972,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-15
 
+### Clone Graph— GR 3
+- **Date:** 2026-09-18
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** The problem if for us to convert and clone it to graph
+- **Brute force approach:** We can use dfs or bfs for the problem. We can use a hashmap to maintain the connections between nodes. We use a queue to start the process and we check for all its neighbors, if its not present then we push it into the hashmap. Then we populate the neighbours array and return the answer
+- **Optimized approach:** Optimised approach is the same as brute force in this case
+- **Time / Space:** O(V + E)
+- **Where I got stuck:** Populating the neighbors array was not easy
+- **The "aha" / trick:** We just the push the mapping of the neighbor into the mapping of the curr pointer
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-15
+
 ### Islands and Treasure — GR 4
 - **Date:** 2026-09-11
 - **Topic/Pattern:** Graphs
