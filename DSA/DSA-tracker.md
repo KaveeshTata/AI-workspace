@@ -1092,6 +1092,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-22
 
+### Word Ladder — GR 13
+- **Date:** 2026-09-21
+- **Topic/Pattern:** Graphs
+- **Signal I used to recognize it:** We can convert the problem to dfs or bfs by assuming each connected word as a graph
+- **Brute force approach:** We can make an adjacency list by comparing if only a single charecter is the difference between the words, we make the adjacency list. Then we do normal BFS where we push the beginning word inside. And then check the substrings, check the visit vector and the map which we store for easy findings 
+- **Optimized approach:** We can also compute the adjacency list on the fly while checking for the one char difference. We start with pushing the beginning word into the queue and check whether it is the end word or not, then we loop through each word and check whether by replacing a single charecter are we getting the same word. if not we push into the word into the queue and tehn erase it from the set
+- **Time / Space:** O(m^2 * n)
+- **Where I got stuck:** The optimized approach is not easy to get idea if solving for the first time
+- **The "aha" / trick:** Check the solution and solve it multiple times
+- **Confidence (1-5):** 1
+- **Revisit by:** 2026-09-22
+
 
 
 
