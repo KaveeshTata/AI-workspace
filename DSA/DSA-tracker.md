@@ -1104,6 +1104,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 1
 - **Revisit by:** 2026-09-22
 
+### CLimbing stairs — DP 1
+- **Date:** 2026-09-22
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use normal recursion just like fibonacci, but the time complexity and space complexity is O(2^n) and O(n)
+- **Optimized approach:** Or we can use DP where we store the result for that i inside an array and access it if it exists. Just like fibonacci
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** It is just basic memoization problem
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-22
+
 
 
 
