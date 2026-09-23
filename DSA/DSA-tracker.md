@@ -1104,7 +1104,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 1
 - **Revisit by:** 2026-09-22
 
-### CLimbing stairs — DP 1
+### Climbing stairs — DP 1
 - **Date:** 2026-09-22
 - **Topic/Pattern:** 1D dynamic programming
 - **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
@@ -1115,6 +1115,42 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** It is just basic memoization problem
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-09-22
+
+### Min Cost Climbing Stairs — DP 2
+- **Date:** 2026-09-23
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use normal recursion just like fibonacci, but the time complexity and space complexity is O(2^n) and O(n)
+- **Optimized approach:** Or we can use DP where we store the result for that i inside an array and access it if it exists. Just like fibonacci. We have two ways where we can start from 0 or 1 and then we can take 2 steps or 1 step. So we return the dp[n] at last which tells us the minimum
+- **Time / Space:** O(n)
+- **Where I got stuck:** Starting at 0 and starting at 1 requires different recursions, so did not think of that
+- **The "aha" / trick:** Instead of one recursion we take two cases and return the minimum of it
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-29
+
+### House Robber — DP 3
+- **Date:** 2026-09-23
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use normal recursion just like fibonacci, but the time complexity and space complexity is O(2^n) and O(n)
+- **Optimized approach:** Or we can use DP where we store the result for that i inside an array and access it if it exists. So we have two cases where we select a number and add it to our stolen money and cross the next house or we skip the house and go to next one. Hence we get nums[i] + f(n - 2) or f(n - 1) we store the maximum everytime inside the dp array.
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Pretty much straightforward
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-29
+
+### House Robber II — DP 4
+- **Date:** 2026-09-23
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use normal recursion just like fibonacci, but the time complexity and space complexity is O(2^n) and O(n)
+- **Optimized approach:** First we need to decide which of the element to reject. It can be either the first or the last, as it cant be both because they are adjacent. Based on that we have two sub problems where we have elements from 0 to n - 2 or from 1 to n - 1 then it is normal house robber problem
+- **Time / Space:** O(n)
+- **Where I got stuck:** Getting the idea that it can be split into two simple problems is not easy
+- **The "aha" / trick:** Splitting the problem into two normal house robber problems
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-29
 
 
 
