@@ -1159,6 +1159,33 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 
 
 
+
+
+### Single Number — BM 1
+- **Date:** 2026-09-24
+- **Topic/Pattern:** Bit Manipulation
+- **Signal I used to recognize it:** Counting something inside a number or an array can be done through but manipulation
+- **Brute force approach:** We can run two loops where we set a number and loop through the array to find its pair or more. If it exists we move to the next number, if not we return ut
+- **Optimized approach:** We can use XOR operator where we know if two similar numbers are XORed, they cancel out so at last only the number which is not repeated will be remaining
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** basic usage of XOR
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-29
+
+### Number of 1 Bits — BM 2
+- **Date:** 2026-09-24
+- **Topic/Pattern:** Bit Manipulation
+- **Signal I used to recognize it:** Counting something inside a number or an array can be done through but manipulation
+- **Brute force approach:** We can use mod or AND operator to determine if the number is 0 or 1. But the more important step is shifting the number to the right so that we can continue doing it
+- **Optimized approach:** The brute force is the optimised approach
+- **Time / Space:** O(1)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** basic usage of MOD or AND operator
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-29
+
+
 ### Non-Cyclical Number — MG 4
 - **Date:** 2026-09-10
 - **Topic/Pattern:** Math and geometry
