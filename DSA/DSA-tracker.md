@@ -1152,6 +1152,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-29
 
+### Longest Palindromic Substring — DP 5
+- **Date:** 2026-09-25
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use two pointer approach or maybe normal looping where we check each substring and slowly reduce the string 
+- **Optimized approach:** We can use DP bottom up approach where we can mark the dp grid as true if the letters match and inner part of the string is already a palindrome. Then we calculate the length of the result and return the substring of it
+- **Time / Space:** O(n^2)
+- **Where I got stuck:** It was somewhat tough to get the idea to be precise because at first glance it doesnt seem to be a DP problem
+- **The "aha" / trick:** So getting that DP factor was the trick into the problem where we store whether the inner string is already a palindrome or not
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-29
+
+### Palindromic Substrings — DP 6
+- **Date:** 2026-09-25
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use two pointer approach or maybe normal looping where we check each substring and slowly reduce the string and return the total answer
+- **Optimized approach:** We can use DP bottom up approach where we can mark the dp grid as true if the letters match and inner part of the string is already a palindrome. We increment the answer by 1 if it satifies the condition and return the answer at the end
+- **Time / Space:** O(n^2)
+- **Where I got stuck:** Its easy if we understand the DP 5
+- **The "aha" / trick:** Just a modification of DP 5
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-09-29
+
 
 
 
