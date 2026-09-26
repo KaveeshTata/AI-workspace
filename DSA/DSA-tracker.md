@@ -1188,6 +1188,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-29
 
+### Coin Change — DP 8
+- **Date:** 2026-09-27
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use recursion and recurse all the possible combinations of selections which is exponential. 
+- **Optimized approach:** Instead we can store the result of that amount inside a map or a vector, so this will represent the number ways this amount can get arranged using the coins. Hence we check for each amount again and again and reduce the amount by the coin value we have
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Handling the return -1 value
+- **The "aha" / trick:** As we return integer values, it can be weird to return -1 as it will change the result, instead we return a dump value and then convert it to -1 while returning the final answer
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-29
+
 
 
 
