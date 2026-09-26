@@ -1176,6 +1176,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-09-29
 
+### Decode Ways — DP 7
+- **Date:** 2026-09-26
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use recursion and recurse all the possible combinations of selections which is exponential. 
+- **Optimized approach:** Instead we store the results for the combination in a map or a table which can be easily accessed. So normally our string becomes the remaining string, but if the next 2 digits are less than 26 we can that possibility too. 
+- **Time / Space:** O(n)
+- **Where I got stuck:** Getting the bottom up approach is somewhat confusing
+- **The "aha" / trick:** So we here dp[i] represents the number of ways the str[i:] can be decoded hence when the s[i]=0, we inherently keep dp[i]=0 as it is invalid
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-29
+
 
 
 
