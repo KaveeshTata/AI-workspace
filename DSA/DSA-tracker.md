@@ -1200,6 +1200,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-29
 
+### Maximum Product Subarray — DP 9
+- **Date:** 2026-09-28
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We cna use normal looping to get it but that will have cubic time complexity
+- **Optimized approach:** Instead we can use Kadanes algorithm where we keep track of the cur min and cur max. The cur max will be changing so we store it and then perform the operations. We check whether the cur max * num is greater or the num is greater, Same with cur min
+- **Time / Space:** O(n)
+- **Where I got stuck:** Getting the idea of Kadanes algorithm
+- **The "aha" / trick:** It is just like maximu. sum subarray. But in this case we have cur min also as negative numbers can also be maximum when we multiply with negative numbers
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-29
+
+### Word Break — DP 10
+- **Date:** 2026-09-28
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use normal recursion but it is exponential 
+- **Optimized approach:** So we use DP top down oe bottom up, we map the index value with boolean value which means that until that index everything has been broken, we return it if accessed again from word
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Bottom up apprach is trickier and can be confusing
+- **The "aha" / trick:** So we initialise the dp array with false and only the last which means the i with value of string length is set to true and we run the loop from last to first and check the condition with dp[i + w.length()] where w is the word from the vector. 
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-09-29
+
 
 
 
