@@ -1224,6 +1224,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-09-29
 
+### Longest Increasing Subsequence — DP 11
+- **Date:** 2026-09-29
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** We can use normal recursion and check two possibilities whether we include it or not but it is exponential
+- **Optimized approach:** So we use DP to store number of possibilites at that index, So we know when the subset starts in last index, there is only one possibility, so we start there and loop through the array and only increase the dp[index] when nums[i] < nums[j] with the max value 
+- **Time / Space:** O(n ^ 2)
+- **Where I got stuck:** It is simpler than what it is being showcased
+- **The "aha" / trick:** We just check the maximum of the dp[i] and 1 + dp[j]
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-29
+
+### Partition Equal Subset Sum — DP 12
+- **Date:** 2026-09-29
+- **Topic/Pattern:** 1D dynamic programming
+- **Signal I used to recognize it:** It has overlapping subproblems and optimised subcomponents. It is a DP problem
+- **Brute force approach:** First we check whether the sum is odd or even, we return false if the sum is even. Then we can use normal recursion and check two possibilities whether the number is being considered in which case we reduce the target or we dont consider it
+- **Optimized approach:** We can use memoization for the index and sum whether the target can be achieved for that index or not
+- **Time / Space:** O(n * target)
+- **Where I got stuck:** It can be trickier to determine what the dp vector stands for
+- **The "aha" / trick:** So it is whether the target t can be achieved from element i onwards. dp[i][t]
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-09-29
+
 
 
 
