@@ -1248,6 +1248,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-29
 
+### Network Delay Time — AG 1
+- **Date:** 2026-09-30
+- **Topic/Pattern:** Advanced Graphs
+- **Signal I used to recognize it:** We have to use Shortest single source distance which is an advanced graph algorithm
+- **Brute force approach:** We can use DFS where we collect the distance based on visited after building the adjacency list and recurse through all the paths to find the minimum one
+- **Optimized approach:** Or we can use any SSSD algorithm. In djikshtras we can use priority queue so that we can have the least distances without having to compare. We can have a visited set where we keep track whether the edge has been visited or not.
+- **Time / Space:** O(V * logE)
+- **Where I got stuck:** Did not know how to use djikshtras algorithm
+- **The "aha" / trick:** Practicing more problems from this
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-10-06
+
 
 
 
