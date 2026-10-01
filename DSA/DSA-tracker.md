@@ -1260,7 +1260,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-10-06
 
-
+### Min Cost to Connect Points — AG 3
+- **Date:** 2026-10-01
+- **Topic/Pattern:** Advanced Graphs
+- **Signal I used to recognize it:** We have to use the minimum spanning tree
+- **Brute force approach:** We can use prims algorithm but first we may have to arrange the points into the adjacency list. Then we can go ahead and perform the actual prims algorithm 
+- **Optimized approach:** Same as brute force approach
+- **Time / Space:** O(n ^ 2 * log n)
+- **Where I got stuck:** Did not know how to use prims algorithm
+- **The "aha" / trick:** Practicing more problems from this
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-06
 
 
 
