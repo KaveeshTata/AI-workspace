@@ -1272,6 +1272,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-06
 
+### Swim in Rising Water — AG 4
+- **Date:** 2026-10-03
+- **Topic/Pattern:** Advanced Graphs
+- **Signal I used to recognize it:** We have to use single source shortest path
+- **Brute force approach:** We can use normal DFS but it would take way lot of time because we have to go all the directions and check the minimum path 
+- **Optimized approach:** We can use Djikshtra algorithm where we store the value of the grid which is t, row and col inside a priority queu and only mobe in the next direction when we know that the value of t is maximum because we would need at least that much to pass through all the boxes 
+- **Time / Space:** O(n ^ 2 * log n)
+- **Where I got stuck:** Did not get stuck at all, just a little confusing in the middle while inserting the value inside the minHeap
+- **The "aha" / trick:** We have to insert the value which is higher just because we will get to know we need at least that much
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-06
 
 
 
