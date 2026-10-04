@@ -1260,6 +1260,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-10-06
 
+### Reconstruct Flight Path — AG 2
+- **Date:** 2026-10-04
+- **Topic/Pattern:** Advanced Graphs
+- **Signal I used to recognize it:** It is a connected graph where vertices are cities and edges are tickets
+- **Brute force approach:** We cna use normal DFS where we check whether the edge is selected or not which means whether the ticket is used or not. which is very complex and has greater time complexity
+- **Optimized approach:** Or we can use euler algorithm where it takes the available edge eveytime because we use deque data structure while storing it. So we can always sort them and take the least lexicographic order and pop them out. 
+- **Time / Space:** O(V * E)
+- **Where I got stuck:** New Algorithm
+- **The "aha" / trick:** Practicing more problems from this
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-06
+
 ### Min Cost to Connect Points — AG 3
 - **Date:** 2026-10-01
 - **Topic/Pattern:** Advanced Graphs
@@ -1282,6 +1294,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Where I got stuck:** Did not get stuck at all, just a little confusing in the middle while inserting the value inside the minHeap
 - **The "aha" / trick:** We have to insert the value which is higher just because we will get to know we need at least that much
 - **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-06
+
+### Cheapest Flights Within K Stops — AG 6
+- **Date:** 2026-10-04
+- **Topic/Pattern:** Advanced Graphs
+- **Signal I used to recognize it:** We have to use single source shortest path
+- **Brute force approach:** We can use dijkshtras algorithm. First we have to make the adjacency list but after that we just use normal queue instead of greedy priority queue approach, we add stops as one of the property inside the queue and then just add another condition to edge relaxation. Thats it
+- **Optimized approach:**  We can use dijkshtras algorithm. First we have to make the adjacency list but after that we just use normal queue instead of greedy priority queue approach, we add stops as one of the property inside the queue and then just add another condition to edge relaxation. Thats it
+- **Time / Space:** O(n * k * log (n * k))
+- **Where I got stuck:** Did not get stuck at all, had a little confusion whether to use the priority queue or not
+- **The "aha" / trick:** Dont use PQ use normal Q
+- **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-06
 
 
