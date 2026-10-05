@@ -1296,6 +1296,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-06
 
+### Alien Dictionary — AG 5
+- **Date:** 2026-10-05
+- **Topic/Pattern:** Advanced Graphs
+- **Signal I used to recognize it:** We have to use topological sort because the language requires the order of the charecters from the directed graph
+- **Brute force approach:** We can use normal DFS but it would take way lot of time because we have to go all the directions and check the minimum path 
+- **Optimized approach:** We can create a adjancency list and use topological sorting using Kahns algorithm, So we check whether the strings match the length, if no we take minimum length and run the loop while comparing the strings and add a directed edge if we get one because of the order and we increase the indegree, Then we perform normal topo sort using Kahns algorithm
+- **Time / Space:** O(V + E + N)
+- **Where I got stuck:** Did not even get the idea that it can be solved using topo sort
+- **The "aha" / trick:** The whole problem is a trick. Best to revise 
+- **Confidence (1-5):** 1
+- **Revisit by:** 2026-10-06
+
 ### Cheapest Flights Within K Stops — AG 6
 - **Date:** 2026-10-04
 - **Topic/Pattern:** Advanced Graphs
