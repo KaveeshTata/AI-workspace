@@ -1320,6 +1320,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-06
 
+### Unique Paths — TDP 1
+- **Date:** 2026-10-06
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion where we can have two directions everytime we move and we take the sum of them when we reach the last position
+- **Optimized approach:**  We can use DP and initialise a vector and store the overlapping problems and return if needed so dp[i][j] = number of times we can reach destination from here. Or we can try bottom up approach where we initialise the destination with 1 and rest of 0 as we iterate in reverse order and basically same formula
+- **Time / Space:** O(m * n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Very easy problem
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-10-13
+
+### Longest Common Subsequence — TDP 2
+- **Date:** 2026-10-06
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion where we can have them same as each other and we increment both i and j or we increment any one of them and return the maximum of them
+- **Optimized approach:**  We can use DP and initialise a vector and store the overlapping problems and return if needed so dp[i][j] where text1[i] and text2[j] number of subsequences. Or we cn use bottom up approach where come from backwards and build towards by checking the dp[i+1][j] and dp[i][j+1] 
+- **Time / Space:** O(m * n)
+- **Where I got stuck:** Got stuck at what the dp vector represents 
+- **The "aha" / trick:** Its basically text1[i] and text2[j] pair number of subsequences
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-13
+
 
 
 
