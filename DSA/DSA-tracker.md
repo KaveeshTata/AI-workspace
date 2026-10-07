@@ -1344,6 +1344,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-13
 
+### Best Time to Buy and Sell Stock with Cooldown — TDP 3
+- **Date:** 2026-10-07
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion with three possible situtations where we have cooldown, buy or sell for a particular day, so we implement them using a bool variable to determine buying or selling
+- **Optimized approach:** We can use DP where we store the maximum profit we get when we buy the stock at day i, so we store it inside a map and return it whenever it exists so as to reduce the load on the recursion
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not know how to implement the bottom up approach
+- **The "aha" / trick:** So check the solution 
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-10-13
+
 
 
 
