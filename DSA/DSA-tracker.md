@@ -1356,6 +1356,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-10-13
 
+### Coin Change II — TDP 4
+- **Date:** 2026-10-08
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion where we have to possibilities after sorting the coins, we have whether the coin at i get selected or coin at i not get selected, we return the end result
+- **Optimized approach:** We can use DP where store the result dp[i][amount] will be the result for that amount at that i, Or we can use bottom up approach where we know dp[i][0] is 1 as there is only way to reach the amount 0, we dont select any coins and we work backwards and store the result
+- **Time / Space:** O(n * a)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** Once we get the recursion, it is very easy
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-10-13
+
 
 
 
