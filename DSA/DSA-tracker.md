@@ -1368,6 +1368,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-13
 
+### Target Sum — TDP 4
+- **Date:** 2026-10-10
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion where we have to possibilities that is to add the next number or subtract it from the next number 
+- **Optimized approach:** We can use DP where store the result dp[i][totalSum] = number of ways to reach the totalSum from i, So we follow the top down approach with it
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Got stuck in the top down approach, because did not know what the dp array means and what it stores
+- **The "aha" / trick:** So we initialise it with i and totalSum znd this calculates how many ways to reach totalSum from i 
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-13
+
 
 
 
