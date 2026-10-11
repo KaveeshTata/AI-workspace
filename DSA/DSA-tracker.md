@@ -1380,6 +1380,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-13
 
+### Interleaving String— TDP 4
+- **Date:** 2026-10-11
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion where we take the charecter from s1 or charecter from s2, if it does follow then we return treu otherwise false
+- **Optimized approach:** We can use DP to calculate the repeatingh subproblem where we check whether from ith index of s1 and jth index of s2, it is possible to get a interleaving string
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Got stuck in the top down approach, because did not know what the dp array means and what it stores
+- **The "aha" / trick:** we check whether from ith index of s1 and jth index of s2, it is possible to get a interleaving string
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-13
+
 
 
 
