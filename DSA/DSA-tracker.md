@@ -1392,6 +1392,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-13
 
+### Longest Increasing Path in Matrix— TDP 5
+- **Date:** 2026-10-12
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion where we traverse from all the possible points and check all the directions if any direction has a greater value then we recurse through it
+- **Optimized approach:** We can use DP for the subproblem where the dp[r][c] is the longest length of the increasing sequence till row r and col c
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Did not get stuck, it was somewhat easy
+- **The "aha" / trick:** No AHA moment
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-10-13
+
 
 
 
