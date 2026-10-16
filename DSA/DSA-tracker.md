@@ -1434,6 +1434,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-09-29
 
+### Missing Number — BM 5
+- **Date:** 2026-10-15
+- **Topic/Pattern:** Bit Manipulation
+- **Signal I used to recognize it:** Counting something inside a number or an array can be done through but manipulation
+- **Brute force approach:** We can use sort and then just iterate from 0 to n to find if any number does not exist. If we find it we return the number
+- **Optimized approach:** Or we use XOR approach where we maintain a variable and iterate through and XOR every element. The only element which will not be present will be remianing and return that value
+- **Time / Space:** O(n)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** basic usage of XOR operator
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-10-20
+
 
 ### Non-Cyclical Number — MG 4
 - **Date:** 2026-09-10
