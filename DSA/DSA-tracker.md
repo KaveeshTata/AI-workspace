@@ -1368,7 +1368,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-13
 
-### Target Sum — TDP 4
+### Target Sum — TDP 5
 - **Date:** 2026-10-10
 - **Topic/Pattern:** 2D dynamic programming
 - **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
@@ -1380,7 +1380,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-13
 
-### Interleaving String— TDP 4
+### Interleaving String— TDP 6
 - **Date:** 2026-10-11
 - **Topic/Pattern:** 2D dynamic programming
 - **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
@@ -1392,7 +1392,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-13
 
-### Longest Increasing Path in Matrix— TDP 5
+### Longest Increasing Path in Matrix— TDP 7
 - **Date:** 2026-10-12
 - **Topic/Pattern:** 2D dynamic programming
 - **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
@@ -1403,6 +1403,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** No AHA moment
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-13
+
+### Distinct Subsequences — TDP 8
+- **Date:** 2026-10-17
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion where we have two options where we move both the index of words when they match, or we only move the index of s until we hit the condition
+- **Optimized approach:** We can use DP for the subproblem where dp[i][j] means the number of subsequences till word1[i] and word2[j]
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Did not get stuck, it was somewhat easy
+- **The "aha" / trick:** No AHA moment
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-20
+
+### Edit Distance — TDP 9
+- **Date:** 2026-10-17
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion to get through the 3 different cases, first case is considering the charecter, second case is deleting the cahrecter and third case is replace a charecter
+- **Optimized approach:** We can use DP for the subproblem where dp[i][j] means the number of operations required to get word2 from word[1] and word2[j]
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** The entire logic is somewhat confusing because we never explicitly use replace, insert or delete, instead we get it from whether we select the charecter or not
+- **The "aha" / trick:** So then it becomes an easy problem
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-20
 
 
 
