@@ -1470,6 +1470,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-20
 
+### Sum of two integers — BM 5
+- **Date:** 2026-10-18
+- **Topic/Pattern:** Bit Manipulation
+- **Signal I used to recognize it:** Counting something inside a number or an array can be done through but manipulation
+- **Brute force approach:** We can just add both the numbers using + sign but that is not the intention of the problem
+- **Optimized approach:** We use the optimal approach where we calculate the result for & operation on both the integers and shift them left, we then calculate a XOR b and move the carry to b for the next iteration
+- **Time / Space:** O(1)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** basic usage of XOR operator
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-10-20
+
 
 ### Non-Cyclical Number — MG 4
 - **Date:** 2026-09-10
