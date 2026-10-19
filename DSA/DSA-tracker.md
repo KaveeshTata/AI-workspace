@@ -1428,6 +1428,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-20
 
+### Regular Expression Matching — TDP 11
+- **Date:** 2026-10-19
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion to get through the cases, The first would to check whether the next charecter is * or not, if it is not we move both i and j, if it is we again have two more possibilities where we skip it entirely or we consider it. 
+- **Optimized approach:** We can use DP for the subproblem where dp[i][j] means whether the s[i:] and p[j:] is match until i and j
+- **Time / Space:** O(n * m)
+- **Where I got stuck:** Its not that hard when the recursion is done 
+- **The "aha" / trick:** So then it becomes an easy problem
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-20
+
 
 
 
