@@ -1428,6 +1428,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-20
 
+### Burst Balloons — TDP 11
+- **Date:** 2026-10-20
+- **Topic/Pattern:** 2D dynamic programming
+- **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
+- **Brute force approach:** Normal recursion where we first add 1 as the padding on the both sides but run the loop from 1 to n - 2, then we check the condition nums[i - 1] * nums[i] * nums[i + 1] which will gives coins and then erase that element and then recurse with the rest of the elements and return the maxCoins after every recursion 
+- **Optimized approach:** We can use dp to find the last burst balloon rather than the first popped balloon because if the last one satifies then we basically have two consition where left of it true or right of it is true, So we do it using DP to make optimised
+- **Time / Space:** O(n ^ 3)
+- **Where I got stuck:** The optimized top down approach is a bit tricky because we have to introduce left and right which means we have to trraverse through that rather than erasing the array
+- **The "aha" / trick:** Using the left and right we have two options after bursting the last possible ballon where we split the recursions into two different where l becomes i - 1 or r becomes i + 1
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-20
+
 ### Regular Expression Matching — TDP 11
 - **Date:** 2026-10-19
 - **Topic/Pattern:** 2D dynamic programming
