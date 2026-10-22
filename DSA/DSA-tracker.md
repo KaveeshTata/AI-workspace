@@ -1452,6 +1452,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-20
 
+### Maximum Subarray — GA 1
+- **Date:** 2026-10-21
+- **Topic/Pattern:** Greedy algorithms
+- **Signal I used to recognize it:** So getting the best answer at every step is greedy which makes this a greedy question
+- **Brute force approach:** We can loop through the entire array fixing each element as the first element as we check the max sum at each step and return the best answer
+- **Optimized approach:** We can use Kadanes algorithm which is a greedy approach where we keep the current sum and max sum, So whenever current sum goes negative we turn into 0 which is restarting the sum again and we return the max sum at the end 
+- **Time / Space:** O(n)
+- **Where I got stuck:** The basic question in arrays and greedy algorithms
+- **The "aha" / trick:** Important for many basic problems
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-10-27
+
+### Jump Game — GA 2
+- **Date:** 2026-10-22
+- **Topic/Pattern:** Greedy algorithms
+- **Signal I used to recognize it:** So getting the best answer at every step is greedy which makes this a greedy question
+- **Brute force approach:** We can use recursion and recurse through all the possible combinations which satisfy the condition but this will almost be O(n!)
+- **Optimized approach:** Or we can use a greedy approach where we start from the end and check which is the nearest index from which we can jump to the end and then we update the goal to that index and so on and on until it reaches the beginning
+- **Time / Space:** O(n)
+- **Where I got stuck:** The idea of startingb from the end is a fascinating ones
+- **The "aha" / trick:** After that it becomes easy
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-10-27
+
 
 
 
