@@ -1476,6 +1476,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-27
 
+### Jump Game II — GA 3
+- **Date:** 2026-10-23
+- **Topic/Pattern:** Greedy algorithms
+- **Signal I used to recognize it:** So getting the best answer at every step is greedy which makes this a greedy question
+- **Brute force approach:** We can use recursion and recurse through all the possible combinations which satisfy the condition but this will almost be O(n!)
+- **Optimized approach:** Or we can use a greedy approach where we have two pointers l and r as we iterate through the array we calculate the farthest we can jump from the given point, then we set the left pointer to r + 1 and r pointer to farthest and we increment result
+- **Time / Space:** O(n)
+- **Where I got stuck:** Somewhat easy if we solve the last problem as the last one was a subproblem of this
+- **The "aha" / trick:** After that it becomes easy
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-10-27
+
 
 
 
