@@ -1488,6 +1488,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-27
 
+### Gas Station — GA 4
+- **Date:** 2026-10-25
+- **Topic/Pattern:** Greedy algorithms
+- **Signal I used to recognize it:** So getting the best answer at every step is greedy which makes this a greedy question
+- **Brute force approach:** The brute force would be to start at every index and loop around to check if the gas becomes negative. If it does we move on to the next index and repeat the process but this is O(n2)
+- **Optimized approach:** Or we can use a greedy approach where we only have to check whether we get a positive number from that index nd if it does not we check where it goes to negative and then we know no index till that one will have the possibility of completing the trip so we know the next result will i + 1
+- **Time / Space:** O(n)
+- **Where I got stuck:** Tricky idea for greedy method
+- **The "aha" / trick:** Check the solution before solving it again
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-10-27
 
 
 
