@@ -1500,6 +1500,29 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-10-27
 
+### Hand of Straights — GA 5
+- **Date:** 2026-10-26
+- **Topic/Pattern:** Greedy algorithms
+- **Signal I used to recognize it:** So getting the best answer at every step is greedy which makes this a greedy question
+- **Brute force approach:** The brute force would be to sort the array and then make them to arrange one by one and reducing the map element count until we get 0 and then we we return back false if it is 0
+- **Optimized approach:** Or we can use a greedy approach where we take a starting element and iterate through the array and reduce the count[start] and then if it is more than num we update the number to start and repeat the process
+- **Time / Space:** O(n)
+- **Where I got stuck:** Hard problem without the solution explanation
+- **The "aha" / trick:** Check the solution before solving it again
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-10-27
+
+### Merge Triplets to Form Target — GA 6
+- **Date:** 2026-10-27
+- **Topic/Pattern:** Greedy algorithms
+- **Signal I used to recognize it:** So getting the best answer at every step is greedy which makes this a greedy question
+- **Brute force approach:** The brute force would be to check each element inside the triplet array with the target and then we only we update the set for getting the unique index and then return true if the set has indices otherwise false
+- **Optimized approach:** Brute force is the optimal approach
+- **Time / Space:** O(n)
+- **Where I got stuck:** Very easy logic to solve it once we understand the questiom
+- **The "aha" / trick:** We never actually compare and change the elements to its max we just keep on iterating knowing that they are the max elements
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-10-27
 
 
 
