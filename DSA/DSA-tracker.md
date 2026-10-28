@@ -1524,6 +1524,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-27
 
+### Partition Labels — GA 7
+- **Date:** 2026-10-28
+- **Topic/Pattern:** Greedy algorithms
+- **Signal I used to recognize it:** So getting the best answer at every step is greedy which makes this a greedy question
+- **Brute force approach:** We can use a two pointer approach with a map storing the index of the charecter for easy retrieval, And we calculate the end pointer by taking out the max of end and position of the index from the map, we push the size into the vector and return the vector
+- **Optimized approach:** Brute force is the optimal approach
+- **Time / Space:** O(n)
+- **Where I got stuck:** Can be somewhat confusing as getting a two pointer approach can be hard
+- **The "aha" / trick:** We have two pointer to know that between start and end we do not have any repeating chars 
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-11-03
+
 
 
 
