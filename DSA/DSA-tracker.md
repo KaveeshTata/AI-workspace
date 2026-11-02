@@ -1440,7 +1440,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-10-20
 
-### Regular Expression Matching — TDP 11
+### Regular Expression Matching — TDP 12
 - **Date:** 2026-10-19
 - **Topic/Pattern:** 2D dynamic programming
 - **Signal I used to recognize it:** Its basically a recursion problem with sub problems and overlapping problems in 2D
@@ -1536,9 +1536,17 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-11-03
 
-
-
-
+### Valid Parenthesis String — GA 8
+- **Date:** 2026-10-28
+- **Topic/Pattern:** Greedy algorithms
+- **Signal I used to recognize it:** So getting the best answer at every step is greedy which makes this a greedy question
+- **Brute force approach:** We can use stack to get the correct order of the open and close brackets. Popping every time we get a pair which requiresan extra structure
+- **Optimized approach:** We can use Greedy algorithm where we use min and max variables to keep track of the opena dn close brackets, so when it is ( we increase min and max, when it is ) we decrease both of them otherwise it is * then we increase max and decrease min since it. an act as any one of them. So when max < 0 we return false as we know there are more open than close
+- **Time / Space:** O(n)
+- **Where I got stuck:** Greedy is very tricky to think yet its easy to implement
+- **The "aha" / trick:** Important trick in the greedy approach, knowing the min and max is enough rather than knowing how many are there 
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-11-03
 
 ### Single Number — BM 1
 - **Date:** 2026-09-24
@@ -1576,7 +1584,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-20
 
-### Sum of two integers — BM 5
+### Sum of two integers — BM 6
 - **Date:** 2026-10-18
 - **Topic/Pattern:** Bit Manipulation
 - **Signal I used to recognize it:** Counting something inside a number or an array can be done through but manipulation
@@ -1592,7 +1600,7 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 ### Non-Cyclical Number — MG 4
 - **Date:** 2026-09-10
 - **Topic/Pattern:** Math and geometry
-- **Signal I used to recognize it:** There is nosignal in these problems 
+- **Signal I used to recognize it:** There is no signal in these problems 
 - **Brute force approach:** We can use hash set to check whether the element is repeating or not and when it does its a cycle, that means its a cyclic number
 - **Optimized approach:** We can use fast and slow pointer approach to detect a cycle, we continuously find the sum of squares of the digits but when the fast and slow pointer meet we know that it contains a cycle, which means its a cyclic number
 - **Time / Space:** O(log n)
@@ -1600,6 +1608,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** So we initialise the slow pointer to n and the fast pointer to the function which calculates sum of squares
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-09-15
+
+### Plus One — MG 5
+- **Date:** 2026-11-02
+- **Topic/Pattern:** Math and geometry
+- **Signal I used to recognize it:** There is no signal in these problems 
+- **Brute force approach:** Recursion where we check the last element of the vector and if it is < 9 then we simply add 1 to it otherwise we recurse and pop the last element and return the result
+- **Optimized approach:** Same as brute force
+- **Time / Space:** O(n)
+- **Where I got stuck:** Easy enough to implemnent
+- **The "aha" / trick:** There is no trick for this 
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-11-03
 ---
 
 ## Weekly Review Checklist
