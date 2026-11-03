@@ -1596,6 +1596,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-20
 
+### Rotate Image — MG 1
+- **Date:** 2026-11-03
+- **Topic/Pattern:** Math and geometry
+- **Signal I used to recognize it:** There is no signal in these problems 
+- **Brute force approach:** We can use brute force and create a new matrix and traverse by forming an array and then set the elements in the new array 
+- **Optimized approach:** Or we can just reverse the matrix vertically and transpose which will rotate the matrix 90 degrees
+- **Time / Space:** O(n ^ 2)
+- **Where I got stuck:** Easy enough to implemnent
+- **The "aha" / trick:** There is no trick for this 
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-11-10
+
 
 ### Non-Cyclical Number — MG 4
 - **Date:** 2026-09-10
