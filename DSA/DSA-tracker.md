@@ -1608,6 +1608,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-11-10
 
+### Rotate Image — MG 2
+- **Date:** 2026-11-06
+- **Topic/Pattern:** Math and geometry
+- **Signal I used to recognize it:** There is no signal in these problems 
+- **Brute force approach:** We can use recursion where we calculate how many rows are left and how many cols are left, the current position and the next position to be we can go along the path and turn when we hit the brick
+- **Optimized approach:** We maintain boundaries where we check the topmost unvisited row, the left most unvisited col, one past the bottom most unvisited row and one past the right most unvisited col. We move along as we increase the variables and decrease according to the direction. 
+- **Time / Space:** O(m * n)
+- **Where I got stuck:** The optimal tecghnique is not an easy method to get the idea for. 
+- **The "aha" / trick:** Its just thinking we are shrinking the wall as we travel so that we never go there so we go left to right on the top row, right to left on the bottom row, top to bottom on the right most col and bottom to top on the left most. So we shrink whenever it is done
+- **Confidence (1-5):** 2
+- **Revisit by:** 2026-11-10
+
 
 ### Non-Cyclical Number — MG 4
 - **Date:** 2026-09-10
@@ -1632,6 +1644,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** There is no trick for this 
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-11-03
+
+### Pow(x, n) — MG 6
+- **Date:** 2026-11-06
+- **Topic/Pattern:** Math and geometry
+- **Signal I used to recognize it:** There is no signal in these problems 
+- **Brute force approach:** Brute force would be just multiply x with n times and return the result
+- **Optimized approach:** Or we use binary exponentiation, so we square the number until the power is even and if power is odd we multiply another x 
+- **Time / Space:** O(log n)
+- **Where I got stuck:** Easy enough to implemnent
+- **The "aha" / trick:** There is no trick for this 
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-11-10
+
+### Multiply Strings — MG 7
+- **Date:** 2026-11-06
+- **Topic/Pattern:** Math and geometry
+- **Signal I used to recognize it:** There is no signal in these problems 
+- **Brute force approach:** We first check all the conditions which are compatiable with multiplication, so we take the first digit of the second number from last and multiple it with the first number then we add a zero and do the same with second last digit, on and on and at last we add all the results to get the final multipled string.
+- **Optimized approach:** Or we can multiply directly but it is somewhat confusing and can be looked into later
+- **Time / Space:** O(min(m,n)* (m+n))
+- **Where I got stuck:** Easy enough to think but had to implement
+- **The "aha" / trick:** We can have two modular functions for multiply and add respectively so we can call multiply repeatedly and then call a single add function
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-11-10
 ---
 
 ## Weekly Review Checklist
