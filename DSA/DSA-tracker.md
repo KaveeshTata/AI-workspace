@@ -1620,6 +1620,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 2
 - **Revisit by:** 2026-11-10
 
+### Set Matrix Zeroes — MG 3
+- **Date:** 2026-11-07
+- **Topic/Pattern:** Math and geometry
+- **Signal I used to recognize it:** There is no signal in these problems 
+- **Brute force approach:** The main problem is updating too early so we can make another matrix and update the second one according to the first matrix so if we have a zero in the first matrix we turn the entire row and col as 0 in the second matrix and in the end copy eveyrthing to the first one 
+- **Optimized approach:** Or we can have two matrices where we update whether it has to be zeroed or not, and at the last we update the matrix
+- **Time / Space:** O(m * n)
+- **Where I got stuck:** Did not get stuck, once we can figure out the arrays to be updated, it is pretty easy
+- **The "aha" / trick:** There is no trick for the problem
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-11-10
+
 
 ### Non-Cyclical Number — MG 4
 - **Date:** 2026-09-10
