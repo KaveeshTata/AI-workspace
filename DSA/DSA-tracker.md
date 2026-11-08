@@ -1680,6 +1680,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** We can have two modular functions for multiply and add respectively so we can call multiply repeatedly and then call a single add function
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-11-10
+
+### Detect Squares — MG 8
+- **Date:** 2026-11-08
+- **Topic/Pattern:** Math and geometry
+- **Signal I used to recognize it:** There is no signal in these problems 
+- **Brute force approach:** We can have two data structures so one is the vector which has all the points even duplicates, And the other is a hashmap which has the counts of the points. So adding is easy we just add it into the vector and increase the count on the map. But for counting we just need four conditions where we check whether there is a diagonal for the point or not at the present. If it is we move on to the checking whether (x, py) and (px, y) are present in the vector if it is then we add to the result
+- **Optimized approach:** Brute force is optimized
+- **Time / Space:** o(1) and O(n)
+- **Where I got stuck:** Addition is easy once we know what DS to use, but getting the idea to check for a diagonal is key for the solution
+- **The "aha" / trick:** From there it is easy
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-11-10
 ---
 
 ## Weekly Review Checklist
