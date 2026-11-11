@@ -1572,6 +1572,30 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-09-29
 
+### Counting Bits — BM 3
+- **Date:** 2026-11-11
+- **Topic/Pattern:** Bit Manipulation
+- **Signal I used to recognize it:** Counting something inside a number or an array can be done through but manipulation
+- **Brute force approach:** We can just loop around all the integerers possible. And for each number we have 32 possible bits so we check all of them and if it is 1 we update the count. 
+- **Optimized approach:** The brute force is the optimised approach
+- **Time / Space:** O(n * logn)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** basic usage of MOD or AND operator
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-11-17
+
+### Reverse Bits — BM 4
+- **Date:** 2026-11-11
+- **Topic/Pattern:** Bit Manipulation
+- **Signal I used to recognize it:** Counting something inside a number or an array can be done through but manipulation
+- **Brute force approach:** We can just read the bits from right to left and append in the reverse order. We can create a new number and just return the unsigned integer format
+- **Optimized approach:** Or we can just reverse the bits directly instead of a new array or a string. 
+- **Time / Space:** O(1)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** basic usage of MOD or AND operator
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-11-17
+
 ### Missing Number — BM 5
 - **Date:** 2026-10-15
 - **Topic/Pattern:** Bit Manipulation
@@ -1595,6 +1619,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** basic usage of XOR operator
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-10-20
+
+### Reverse Integer — BM 7
+- **Date:** 2026-11-11
+- **Topic/Pattern:** Bit Manipulation
+- **Signal I used to recognize it:** Counting something inside a number or an array can be done through but manipulation
+- **Brute force approach:** we first convert the number into string without its sign and then reverse the string, then we convert it into an integer and then multiply the sign. We also check the bound condition before returning the integer.
+- **Optimized approach:** Brute force is the best method 
+- **Time / Space:** O(1)
+- **Where I got stuck:** Did not get stuck
+- **The "aha" / trick:** basic usage of MOD or AND operator
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-11-17
 
 ### Rotate Image — MG 1
 - **Date:** 2026-11-03
