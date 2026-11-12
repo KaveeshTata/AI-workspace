@@ -1728,6 +1728,18 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **The "aha" / trick:** From there it is easy
 - **Confidence (1-5):** 3
 - **Revisit by:** 2026-11-10
+
+### Insert Interval — IN 1
+- **Date:** 2026-11-12
+- **Topic/Pattern:** Intervals
+- **Signal I used to recognize it:** Related to all the problems related to overlapping, non overlapping interval problems 
+- **Brute force approach:** Divide the problem to three different subproblems where first we need the first part which have the end interval less than the start of the new interval which is exactly as is, then we need the actual overlapping intervals where we check whether the start of the interval is less than the end of the new interval which will give us the required overlaps, so we calculate the min of all the start intervals and max of all the end intervals. At last we have the rest of the intervals which are as is 
+- **Optimized approach:** Brute force is optimized
+- **Time / Space:** o(n )
+- **Where I got stuck:** After dividing its very easy 
+- **The "aha" / trick:** No trick for the problem 
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-11-17
 ---
 
 ## Weekly Review Checklist
