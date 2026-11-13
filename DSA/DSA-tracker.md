@@ -1735,9 +1735,33 @@ Keep entries short — 1-2 lines per field max. The goal is fast capture, not es
 - **Signal I used to recognize it:** Related to all the problems related to overlapping, non overlapping interval problems 
 - **Brute force approach:** Divide the problem to three different subproblems where first we need the first part which have the end interval less than the start of the new interval which is exactly as is, then we need the actual overlapping intervals where we check whether the start of the interval is less than the end of the new interval which will give us the required overlaps, so we calculate the min of all the start intervals and max of all the end intervals. At last we have the rest of the intervals which are as is 
 - **Optimized approach:** Brute force is optimized
-- **Time / Space:** o(n )
+- **Time / Space:** o(n)
 - **Where I got stuck:** After dividing its very easy 
 - **The "aha" / trick:** No trick for the problem 
+- **Confidence (1-5):** 4
+- **Revisit by:** 2026-11-17
+
+### Merge Interval — IN 2
+- **Date:** 2026-11-13
+- **Topic/Pattern:** Intervals
+- **Signal I used to recognize it:** Related to all the problems related to overlapping, non overlapping interval problems 
+- **Brute force approach:** The easiest way is to sort the intervals and fr each of tne interval we check whether the start of the interval is less than the existing interval end, if it is we take the max of them or we just push the entire interval to output
+- **Optimized approach:** Or else there is a greedy solution where we calculate the farthest point possible from the start and keep track of it which helps in merging the overlapping intervals
+- **Time / Space:** o(n * logn)
+- **Where I got stuck:** The optimized approach is not easy and difficult to actually visualise
+- **The "aha" / trick:** Read the solution
+- **Confidence (1-5):** 3
+- **Revisit by:** 2026-11-17
+
+### Meeting Rooms 1 — IN 4
+- **Date:** 2026-11-13
+- **Topic/Pattern:** Intervals
+- **Signal I used to recognize it:** Related to all the problems related to overlapping, non overlapping interval problems 
+- **Brute force approach:** We can sort the intervals and check if the start of the next interval is less than the end of the previous interval, if it is then we cannot or else we can
+- **Optimized approach:** Brute force is optimised
+- **Time / Space:** o(n * logn)
+- **Where I got stuck:** Easy to solve so did not get stuck
+- **The "aha" / trick:** There is no trick to the solution
 - **Confidence (1-5):** 4
 - **Revisit by:** 2026-11-17
 ---
